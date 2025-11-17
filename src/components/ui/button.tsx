@@ -1,0 +1,56 @@
+"use client";
+
+import * as React from "react";
+import { Slot } from "@radix-ui/react-slot";
+import { cva, type VariantProps } from "class-variance-authority";
+
+import { cn } from "@/lib/utils";
+
+const buttonVariants = cva(
+  "inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-60",
+  {
+    variants: {
+      variant: {
+        default:
+          "bg-gradient-to-r from-codeweek-secondary to-codeweek-red-600 text-white shadow-soft hover:from-codeweek-red-600 hover:to-codeweek-red-700 focus-visible:ring-codeweek-secondary transform hover:scale-105 transition-all",
+        secondary:
+          "bg-gradient-to-r from-white to-codeweek-blue-50 text-codeweek-primary border-2 border-codeweek-primary hover:from-codeweek-primary hover:to-codeweek-blue-700 hover:text-white focus-visible:ring-codeweek-primary/50 transform hover:scale-105 transition-all",
+        ghost:
+          "bg-transparent text-codeweek-primary hover:bg-codeweek-blue-100/60 hover:text-codeweek-secondary focus-visible:ring-codeweek-blue-200 transform hover:scale-105 transition-all",
+      },
+      size: {
+        default: "h-11 px-6",
+        sm: "h-9 px-4 text-xs",
+        lg: "h-12 px-8 text-base",
+        icon: "h-10 w-10",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+      size: "default",
+    },
+  }
+);
+
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonVariants> {
+  asChild?: boolean;
+}
+
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
+    const Comp = asChild ? Slot : "button";
+    return (
+      <Comp
+        className={cn(buttonVariants({ variant, size, className }))}
+        ref={ref}
+        {...props}
+      />
+    );
+  }
+);
+Button.displayName = "Button";
+
+export { Button, buttonVariants };
+
