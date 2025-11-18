@@ -25,7 +25,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             className="inline-flex w-fit rounded-full bg-codeweek-secondary px-5 py-2 text-xs font-semibold uppercase tracking-widest text-white"
           >
-            13-19 Ekim • İstanbul & Online
+            Eyüboğlu Eğitim Kurumları
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
