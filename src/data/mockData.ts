@@ -2,7 +2,7 @@ export const heroStats = [
   { label: "Katılımcı", value: "1.200+", detail: "Öğrenci & profesyonel" },
   { label: "Atölye", value: "24", detail: "Teknik ve tasarım" },
   { label: "Konuşmacı", value: "32", detail: "Ulusal & global" },
-  { label: "Hackathon Ödülü", value: "₺250K", detail: "Toplam ödül" },
+  { label: "Hackathon Ödülü", value: "-", detail: "Toplam ödül" },
 ];
 
 export const quickLinks = [
