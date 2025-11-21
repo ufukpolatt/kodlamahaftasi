@@ -1,26 +1,27 @@
 export const siteConfig = {
-  name: "CodeWeek Haftası",
+  name: "CodeWeek AI",
   description:
-    "CodeWeek topluluğu için atölyeler, konuşmalar ve hackathonlarla dolu, enerjik ve katılımcı bir etkinlik haftası.",
-  url: "https://codeweek.example.com",
-  ogImage: "/og.png",
+    "Yapay zeka ve etik temalı CodeWeek haftası. Machine learning, AI ethics ve sorumlu inovasyon için bir araya geliyoruz.",
+  url: "https://codeweek-ai.example.com",
+  ogImage: "/og-ai.png",
   contact: {
-    email: "info@codeweek.org",
-    phone: "+90 212 000 00 00",
+    email: "ai@codeweek.org",
+    phone: "+90 212 555 00 00",
   },
   socials: [
-    { label: "Instagram", href: "https://instagram.com/codeweek" },
-    { label: "LinkedIn", href: "https://linkedin.com/company/codeweek" },
-    { label: "YouTube", href: "https://youtube.com/@codeweek" },
+    { label: "Twitter", href: "https://twitter.com/codeweekai" },
+    { label: "LinkedIn", href: "https://linkedin.com/company/codeweek-ai" },
+    { label: "GitHub", href: "https://github.com/codeweek-ai" },
   ],
   navLinks: [
-    { label: "Ana Sayfa", href: "/" },
-    { label: "Takvim", href: "/schedule" },
+    { label: "Anasayfa", href: "/" },
+    { label: "Etkinlik Takvimi", href: "/schedule" },
     { label: "Atölyeler", href: "/workshops" },
     { label: "Konuşmacılar", href: "/speakers" },
+    { label: "Yarışmacılar&Maratonlar", href: "/competitions" },
+    { label: "Veli Katılımı", href: "/community" },
     { label: "İletişim", href: "/contact" },
   ],
 };
 
 export type SiteConfig = typeof siteConfig;
-

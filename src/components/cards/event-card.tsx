@@ -1,3 +1,8 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Clock, MapPin, Zap } from "lucide-react";
+
 type EventCardProps = {
   title: string;
   time: string;
@@ -6,13 +11,47 @@ type EventCardProps = {
 
 export function EventCard({ title, time, track }: EventCardProps) {
   return (
-    <div className="rounded-2xl border border-codeweek-blue-200/40 bg-gradient-to-br from-codeweek-blue-50/80 to-white/70 p-5 shadow-soft transition hover:-translate-y-1 hover:shadow-xl hover:border-codeweek-blue-300/60">
-      <div className="flex items-center justify-between text-xs uppercase tracking-wide text-codeweek-blue-600">
-        <span className="font-medium">{track}</span>
-        <span className="font-semibold text-codeweek-secondary">{time}</span>
+    <motion.div
+      whileHover={{ x: 5, scale: 1.02 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      className="ai-card group cursor-pointer rounded-xl p-4 relative overflow-hidden"
+    >
+      {/* Data Stream Effect */}
+      <div className="absolute inset-0 data-stream opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      
+      {/* Header */}
+      <div className="flex items-center justify-between mb-3 relative z-10">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-codeweek-purple-500 to-codeweek-pink-500 flex items-center justify-center">
+            <MapPin className="w-4 h-4 text-white" />
+          </div>
+          <span className="text-xs font-bold uppercase tracking-wider text-codeweek-purple-400">
+            {track}
+          </span>
+        </div>
+        <div className="flex items-center gap-1">
+          <Clock className="w-3 h-3 text-codeweek-pink-400" />
+          <span className="text-xs font-bold text-codeweek-pink-400">
+            {time}
+          </span>
+        </div>
       </div>
-      <h3 className="mt-3 text-lg font-semibold text-codeweek-primary">{title}</h3>
-    </div>
+      
+      {/* Title */}
+      <h3 className="text-sm font-bold text-white mb-2 relative z-10 group-hover:gradient-text transition-all duration-300">
+        {title}
+      </h3>
+      
+      {/* AI Badge */}
+      <div className="flex items-center gap-2 relative z-10">
+        <div className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full animate-pulse"></div>
+        <span className="text-xs text-codeweek-purple-300 uppercase tracking-wider">
+          AI Powered
+        </span>
+      </div>
+      
+      {/* Hover Glow */}
+      <div className="absolute inset-0 bg-gradient-to-r from-codeweek-purple-600/5 to-codeweek-pink-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </motion.div>
   );
 }
-

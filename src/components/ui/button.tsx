@@ -12,11 +12,15 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-gradient-to-r from-codeweek-secondary to-codeweek-red-600 text-white shadow-soft hover:from-codeweek-red-600 hover:to-codeweek-red-700 focus-visible:ring-codeweek-secondary transform hover:scale-105 transition-all",
+          "bg-gradient-to-r from-codeweek-purple-600 to-codeweek-pink-600 text-white shadow-glow hover:from-codeweek-purple-700 hover:to-codeweek-pink-700 focus-visible:ring-codeweek-purple-500 transform hover:scale-105 transition-all",
         secondary:
-          "bg-gradient-to-r from-white to-codeweek-blue-50 text-codeweek-primary border-2 border-codeweek-primary hover:from-codeweek-primary hover:to-codeweek-blue-700 hover:text-white focus-visible:ring-codeweek-primary/50 transform hover:scale-105 transition-all",
+          "bg-codeweek-muted/50 border border-codeweek-purple-500/30 text-codeweek-purple-200 hover:bg-codeweek-muted/70 hover:border-codeweek-purple-500/50 focus-visible:ring-codeweek-purple-500/50 transform hover:scale-105 transition-all",
         ghost:
-          "bg-transparent text-codeweek-primary hover:bg-codeweek-blue-100/60 hover:text-codeweek-secondary focus-visible:ring-codeweek-blue-200 transform hover:scale-105 transition-all",
+          "bg-transparent text-codeweek-purple-300 hover:bg-codeweek-purple-500/10 hover:text-codeweek-purple-200 focus-visible:ring-codeweek-purple-500/30 transform hover:scale-105 transition-all",
+        outline:
+          "border border-codeweek-purple-500 text-codeweek-purple-300 hover:bg-codeweek-purple-500/10 hover:text-white focus-visible:ring-codeweek-purple-500/50 transform hover:scale-105 transition-all",
+        ai:
+          "bg-gradient-to-r from-codeweek-ai-500 to-codeweek-purple-600 text-white shadow-glow hover:from-codeweek-ai-600 hover:to-codeweek-purple-700 focus-visible:ring-codeweek-ai-500 transform hover:scale-105 transition-all data-stream",
       },
       size: {
         default: "h-11 px-6",
@@ -53,4 +57,3 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 Button.displayName = "Button";
 
 export { Button, buttonVariants };
-
