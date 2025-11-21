@@ -1,8 +1,7 @@
 export const heroStats = [
-  { label: "AI Katılımcı", value: "2.500+", detail: "Öğrenci & profesyonel" },
-  { label: "AI Atölye", value: "32", detail: "Machine learning & etik" },
-  { label: "AI Mentor", value: "48", detail: "Global & yerel uzmanlar" },
-  { label: "AI Ödülü", value: "₺500K", detail: "Inovasyon fonu" },
+  { label: "Katılımcı", value: "2.500+", detail: "Öğrenci & profesyonel" },
+  { label: "Atölye", value: "32", detail: "Machine learning & etik" },
+  { label: "Mentor", value: "48", detail: "Global & yerel uzmanlar" }
 ];
 
 export const quickLinks = [
