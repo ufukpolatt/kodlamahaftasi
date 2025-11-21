@@ -17,7 +17,7 @@ export function Footer() {
 
       <div className="relative z-10 mx-auto w-[min(1400px,95%)] flex flex-col gap-12 py-16">
         {/* Main Content */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-3">
           {/* Brand Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -26,17 +26,13 @@ export function Footer() {
             className="space-y-4"
           >
             <div className="flex items-center gap-3">
-              <motion.div
+              <motion.img
                 whileHover={{ rotate: 360, scale: 1.1 }}
                 transition={{ duration: 0.5 }}
-                className="w-12 h-12 rounded-xl bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center"
-              >
-                <Brain className="w-7 h-7 text-white" />
-              </motion.div>
-              <div className="font-black text-2xl tracking-tight">
-                <span className="gradient-text">Code</span>
-                <span className="text-white">Week</span>
-              </div>
+                src="/logo.webp"
+                alt="CodeWeek Logo"
+                className="w-12 h-12 rounded-xl"
+              />
             </div>
             <p className="text-sm text-codeweek-purple-300 leading-relaxed">
               {siteConfig.description}
@@ -98,33 +94,6 @@ export function Footer() {
             </div>
           </motion.div>
 
-          {/* Social */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="space-y-4"
-          >
-            <h3 className="text-lg font-bold gradient-text">Sosyal Medya</h3>
-            <div className="flex gap-3">
-              {siteConfig.socials.map((social) => (
-                <motion.a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 rounded-lg bg-codeweek-muted/50 border border-codeweek-purple-500/30 flex items-center justify-center text-codeweek-purple-300 hover:text-white hover:border-codeweek-purple-500/60 hover:bg-codeweek-purple-500/20 transition-all duration-300"
-                >
-                  {social.label === "Instagram" && <Twitter className="w-5 h-5" />}
-                  {social.label === "LinkedIn" && <Linkedin className="w-5 h-5" />}
-                  {social.label === "YouTube" && <Github className="w-5 h-5" />}
-                </motion.a>
-              ))}
-            </div>
-          </motion.div>
         </div>
 
         {/* Bottom Section */}

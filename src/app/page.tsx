@@ -260,11 +260,8 @@ export default function Home() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-widest text-codeweek-pink-400">
-            AI Etkinlikleri
-          </p>
           <h2 className="mt-4 text-4xl md:text-5xl font-black">
-            <span className="gradient-text">Yapay Zeka</span> Takvimi
+            Takvim
           </h2>
           <p className="mt-4 text-lg text-codeweek-purple-300 max-w-2xl mx-auto">
             Machine learning'den etik yapay zekaya, hafta boyunca sürecek AI odaklı etkinlikler
@@ -314,11 +311,8 @@ export default function Home() {
           className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between"
         >
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-codeweek-pink-400">
-              AI Atölyeleri
-            </p>
             <h2 className="mt-2 text-4xl md:text-5xl font-black">
-              <span className="gradient-text">Yapay Zeka</span> Laboratuvarları
+              Atölyeler
             </h2>
             <p className="mt-4 text-lg text-codeweek-purple-300">
               Hands-on AI deneyimleri ve pratik uygulamalar
@@ -353,11 +347,8 @@ export default function Home() {
           className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
         >
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-codeweek-pink-400">
-              AI Mentorları
-            </p>
             <h2 className="mt-2 text-4xl md:text-5xl font-black">
-              <span className="gradient-text">Yapay Zeka</span> Liderleri
+              Konuşmacılar
             </h2>
             <p className="mt-4 text-lg text-codeweek-purple-300">
               Sektörün önde gelen AI uzmanları ve etik düşünürler
@@ -383,114 +374,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AI Video Showcase Section */}
-      <section className="mx-auto w-[min(1400px,95%)] space-y-12">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center animate-pulse">
-              <Brain className="w-6 h-6 text-white" />
-            </div>
-            <h2 className="text-4xl font-black gradient-text">AI Deneyim Alanı</h2>
-          </div>
-          <p className="text-lg text-codeweek-purple-300 max-w-2xl mx-auto">
-            Yapay zekanın gücünü keşfedin, interaktif deneyimlerle AI'nın sınırlarını zorlayın
-          </p>
-        </motion.div>
-
-        <div className="grid gap-8 lg:grid-cols-3">
-          {/* Interactive AI Demo */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="ai-card rounded-3xl p-8 relative overflow-hidden group cursor-pointer"
-          >
-            <div className="aspect-video bg-gradient-to-br from-codeweek-purple-600/20 to-codeweek-pink-600/20 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-grid-light opacity-20"></div>
-              <motion.div
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 3, repeat: Infinity }}
-                className="w-20 h-20 rounded-full bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center"
-              >
-                <Network className="w-10 h-10 text-white" />
-              </motion.div>
-            </div>
-            <h3 className="text-xl font-bold text-white mb-3 group-hover:gradient-text transition-colors">
-              Neural Network Visualizer
-            </h3>
-            <p className="text-sm text-codeweek-purple-200 mb-4">
-              Gerçek zamanlı neural network ağını izleyin, AI öğrenme süreçlerini anlayın
-            </p>
-            <Button className="w-full bg-gradient-to-r from-codeweek-purple-600 to-codeweek-pink-600 hover:from-codeweek-purple-700 hover:to-codeweek-pink-700 text-white border-0">
-              Deneyimle
-            </Button>
-          </motion.div>
-
-          {/* AI Chat Demo */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="ai-card rounded-3xl p-8 relative overflow-hidden group cursor-pointer"
-          >
-            <div className="aspect-video bg-gradient-to-br from-codeweek-purple-600/20 to-codeweek-pink-600/20 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-grid-light opacity-20"></div>
-              <motion.div
-                animate={{ rotate: [0, 360] }}
-                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-                className="w-20 h-20 rounded-full bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center"
-              >
-                <Cpu className="w-10 h-10 text-white" />
-              </motion.div>
-            </div>
-            <h3 className="text-xl font-bold text-white mb-3 group-hover:gradient-text transition-colors">
-              AI Chat Simulator
-            </h3>
-            <p className="text-sm text-codeweek-purple-200 mb-4">
-              Gelişmiş AI modeliyle konuşun, generative AI'nin gücünü deneyimleyin
-            </p>
-            <Button className="w-full bg-gradient-to-r from-codeweek-purple-600 to-codeweek-pink-600 hover:from-codeweek-purple-700 hover:to-codeweek-pink-700 text-white border-0">
-              Sohbete Başla
-            </Button>
-          </motion.div>
-
-          {/* AI Ethics Simulator */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="ai-card rounded-3xl p-8 relative overflow-hidden group cursor-pointer"
-          >
-            <div className="aspect-video bg-gradient-to-br from-codeweek-purple-600/20 to-codeweek-pink-600/20 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-grid-light opacity-20"></div>
-              <motion.div
-                animate={{ opacity: [0.3, 1, 0.3] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="w-20 h-20 rounded-full bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center"
-              >
-                <Shield className="w-10 h-10 text-white" />
-              </motion.div>
-            </div>
-            <h3 className="text-xl font-bold text-white mb-3 group-hover:gradient-text transition-colors">
-              AI Ethics Simulator
-            </h3>
-            <p className="text-sm text-codeweek-purple-200 mb-4">
-              AI karar verme süreçlerini analiz edin, etik AI prensiplerini öğrenin
-            </p>
-            <Button className="w-full bg-gradient-to-r from-codeweek-purple-600 to-codeweek-pink-600 hover:from-codeweek-purple-700 hover:to-codeweek-pink-700 text-white border-0">
-              Simülatörü Aç
-            </Button>
-          </motion.div>
-        </div>
-      </section>
     </div>
   );
 }
