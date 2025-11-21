@@ -1,89 +1,131 @@
-import { Metadata } from "next";
+"use client";
 
-import { PageHeader } from "@/components/layout/page-header";
+import { motion } from "framer-motion";
+import { Trophy, Zap, Target, Users, Calendar, Award } from "lucide-react";
 import { competitions, hackathon } from "@/data/mockData";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-
-export const metadata: Metadata = {
-  title: "Yarışmalar & Hackathon",
-  description:
-    "Yarışma kartları ve hackathon hero alanı placeholder içeriklerle hazır.",
-};
+import { CompetitionCard } from "@/components/cards/competition-card";
 
 export default function CompetitionsPage() {
   return (
-    <div className="space-y-12 pb-20">
-      <PageHeader
-        badge="4 Yarışma + Hackathon"
-        title="Yarışmalar ve Hackathon"
-        description="Toplam ₺265K ödül havuzu ile teknoloji yarışmaları. GenAI, açık veri, sürdürülebilirlik ve erişilebilirlik temalarında yarışmalar."
-        actions={
-          <Button size="lg" asChild>
-            <a href="#hackathon">Hackathon Başvurusu</a>
-          </Button>
-        }
-      />
+    <div className="min-h-screen pt-24 pb-16">
+      {/* Hero Section */}
+      <section className="mx-auto w-[min(1400px,95%)] mb-20">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center space-y-8"
+        >
+          <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-codeweek-purple-500/20 to-codeweek-pink-500/20 border border-codeweek-purple-500/30 px-6 py-3">
+            <Trophy className="w-5 h-5 text-codeweek-purple-400" />
+            <span className="text-sm font-bold uppercase tracking-widest text-codeweek-purple-300">
+              Yarışmalar & Maratonlar
+            </span>
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl font-black">
+            <span className="gradient-text">Yarışmalar & Maratonlar</span>
+          </h1>
+          
+          <p className="text-xl text-codeweek-purple-200 max-w-3xl mx-auto leading-relaxed">
+            Yarışma ve maratonlarda katılım sağlayarak, inovasyonun sınırlarını zorlayın ve
+            toplumsal fayda sağlayan projeler geliştirin.
+          </p>
+        </motion.div>
+      </section>
 
-      <section className="mx-auto w-[min(1100px,95%)] space-y-6">
-        <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-bold text-slate-900">Yarışmalar</h2>
-          <p className="text-sm text-slate-600">Toplam Ödül: ₺265K</p>
-        </div>
-        <div className="grid gap-6 md:grid-cols-2">
-          {competitions.map((competition) => (
-            <Card key={competition.title} className="p-6">
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-secondary">
-                    Ödül: {competition.prize}
-                  </p>
-                  <h3 className="mt-3 text-2xl font-semibold text-slate-900">
-                    {competition.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                    {competition.desc}
-                  </p>
+      {/* Hackathon Section */}
+      <section className="mx-auto w-[min(1400px,95%)] mb-20">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="ai-card rounded-3xl p-12 neural-bg relative overflow-hidden"
+        >
+          <div className="relative z-10 grid gap-8 md:grid-cols-2">
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center">
+                  <Zap className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-3xl font-bold gradient-text">{hackathon.title}</h2>
+              </div>
+              
+              <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4 text-codeweek-purple-400" />
+                  <span className="text-sm font-medium text-codeweek-purple-300">{hackathon.duration}</span>
                 </div>
               </div>
-              <div className="mt-4">
-                <Button variant="secondary" size="sm">
-                  Başvur
-                </Button>
+              
+              <p className="text-lg text-codeweek-purple-200 mb-8 leading-relaxed">
+                {hackathon.focus}
+              </p>
+              
+              <div className="space-y-3">
+                <h3 className="text-sm font-bold uppercase tracking-wider text-codeweek-pink-400 mb-4">
+                  Hackathon Avantajları
+                </h3>
+                {hackathon.perks.map((perk, index) => (
+                  <div key={perk} className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full"></div>
+                    <span className="text-sm text-codeweek-purple-200">{perk}</span>
+                  </div>
+                ))}
               </div>
-            </Card>
+            </div>
+            
+            <div className="flex items-center justify-center">
+              <motion.div
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="w-64 h-64 rounded-full bg-gradient-to-br from-codeweek-purple-600/20 to-codeweek-pink-600/20 flex items-center justify-center border border-codeweek-purple-500/30"
+              >
+                <Trophy className="w-24 h-24 text-codeweek-purple-400" />
+              </motion.div>
+            </div>
+          </div>
+          
+          {/* Background Effects */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0 bg-gradient-to-br from-codeweek-purple-500/20 to-codeweek-pink-500/20"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-grid-light"></div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Competitions Grid */}
+      <section className="mx-auto w-[min(1400px,95%)] space-y-12">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <Award className="w-6 h-6 text-codeweek-pink-400" />
+            <h2 className="text-3xl font-bold gradient-text">AI Yarışma Kategorileri</h2>
+          </div>
+          <p className="text-lg text-codeweek-purple-200 max-w-2xl mx-auto">
+            Farklı AI alanlarında uzmanlaşarak, inovasyonun farklı boyutlarını keşfedin
+          </p>
+        </motion.div>
+        
+        <div className="grid gap-8 md:grid-cols-2">
+          {competitions.map((competition, index) => (
+            <motion.div
+              key={competition.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+            >
+              <CompetitionCard {...competition} />
+            </motion.div>
           ))}
         </div>
       </section>
 
-      <section id="hackathon" className="mx-auto w-[min(1100px,95%)]">
-        <div className="rounded-[36px] border border-white/70 bg-gradient-to-br from-codeweek-primary to-codeweek-secondary p-10 text-white shadow-[0_25px_70px_rgba(222,30,24,0.35)]">
-          <p className="text-xs uppercase tracking-[0.3em] text-white/70">
-            {hackathon.duration}
-          </p>
-          <h2 className="mt-2 text-4xl font-bold">{hackathon.title}</h2>
-          <p className="mt-4 max-w-2xl text-base text-white/90">{hackathon.focus}</p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            {hackathon.perks.map((perk) => (
-              <span
-                key={perk}
-                className="rounded-full bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur"
-              >
-                {perk}
-              </span>
-            ))}
-          </div>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Button size="lg" variant="secondary">
-              Başvuru Formu
-            </Button>
-            <Button size="lg" variant="ghost" className="text-white">
-              Kurallar Dokümanı
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
-
