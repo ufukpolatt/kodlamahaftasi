@@ -25,8 +25,8 @@ export function Navbar() {
     <>
       <header
         className={cn(
-          "sticky top-0 z-50 mx-auto flex w-[min(1400px,95%)] items-center justify-between rounded-2xl border border-codeweek-purple-500/20 bg-codeweek-dark/80 px-6 py-4 backdrop-blur-xl transition-all duration-300",
-          scrolled && "shadow-glow border-codeweek-purple-500/40 py-3"
+          "sticky top-0 z-50 mx-auto flex w-[min(1400px,95%)] items-center justify-between rounded-2xl border border-codeweek-purple-500/20 bg-codeweek-dark/80 px-6 py-5 backdrop-blur-xl transition-all duration-300",
+          scrolled && "shadow-glow border-codeweek-purple-500/40 py-4"
         )}
       >
         {/* Logo */}
@@ -39,7 +39,7 @@ export function Navbar() {
             <img
               src="/logo.webp"
               alt="CodeWeek Logo"
-              className="h-10 w-auto"
+              className="h-14 w-auto"
             />
           </motion.div>
           <Sparkles className="w-4 h-4 text-codeweek-pink-400 opacity-0 group-hover:opacity-100 transition-opacity" />

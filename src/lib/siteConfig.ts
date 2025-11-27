@@ -18,7 +18,7 @@ export const siteConfig = {
     { label: "Etkinlik Takvimi", href: "/schedule" },
     { label: "Atölyeler", href: "/workshops" },
     { label: "Konuşmacılar", href: "/speakers" },
-    { label: "Yarışmacılar&Maratonlar", href: "/competitions" },
+    { label: "Yarışmalar&Maratonlar", href: "/competitions" },
     { label: "Veli Katılımı", href: "/community" },
     { label: "İletişim", href: "/contact" },
   ],

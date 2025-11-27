@@ -26,18 +26,54 @@ export default function Home() {
         <div className="floating-orb w-80 h-80 bottom-20 left-1/3 opacity-10" style={{ animationDelay: '4s' }}></div>
       </div>
 
+      {/* Video Showcase at Top */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.1 }}
+        className="relative mx-auto w-[min(1400px,95%)] mb-2"
+      >
+        <div className="relative rounded-3xl overflow-hidden ai-card">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-96 object-cover"
+          >
+            <source src="/homepage.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          
+          {/* Overlay Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-br from-codeweek-purple-900/20 via-transparent to-codeweek-pink-900/20"></div>
+          
+          {/* Overlay Text */}
+          <div className="absolute bottom-6 left-0 right-0 text-center">
+            <motion.p
+              animate={{ opacity: [0.5, 1, 0.5] }}
+              transition={{ duration: 2, repeat: Infinity }}
+              className="text-sm font-medium text-codeweek-purple-200 drop-shadow-lg"
+            >
+              Yapay Zeka • Etik • İnovasyon
+            </motion.p>
+          </div>
+        </div>
+      </motion.div>
+
       {/* Hero Section - AI Themed */}
-      <section className="relative mx-auto w-[min(1400px,95%)] -mt-8">
+      <section className="relative mx-auto w-[min(1400px,95%)] -mt-2">
         <div className="relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
             className="text-center mb-12"
           >
             <motion.span
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.3 }}
               className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-codeweek-purple-500/20 to-codeweek-pink-500/20 border border-codeweek-purple-500/30 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-codeweek-purple-300 backdrop-blur-sm"
             >
               <Sparkles className="w-4 h-4" />
@@ -49,114 +85,23 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.4 }}
             className="text-center space-y-8 mb-8"
           >
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight">
-              <span className="gradient-text">Yapay Zeka</span>
-              <br />
-              <span className="text-white">ve Etik</span>
-            </h1>
+            <div className="flex items-center justify-between w-full max-w-6xl mx-auto">
+              <img src="/e_Logosu.png" alt="Logo" className="h-48 md:h-64 lg:h-72 w-auto opacity-90" />
+              <h1 className="text-5xl md:text-7xl font-black tracking-tight text-center px-8">
+                <span className="gradient-text">Yapay Zeka</span>
+                <br />
+                <span className="text-white">ve Etik</span>
+              </h1>
+              <img src="/e_Logosu.png" alt="Logo" className="h-48 md:h-64 lg:h-72 w-auto opacity-90" />
+            </div>
             <p className="text-xl md:text-2xl text-codeweek-purple-200 max-w-3xl mx-auto leading-relaxed">
               CodeWeek Haftası'nda yapay zekanın sınırlarını zorlayarak,
               <span className="gradient-text font-semibold"> teknolojiyi toplumsal faydaya </span>
               dönüştüren yenilikçi çözümler geliştiriyoruz.
             </p>
-          </motion.div>
-
-          {/* AI Animation Showcase */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4 }}
-            className="mb-20"
-          >
-            <div className="relative mx-auto max-w-4xl h-80 rounded-3xl overflow-hidden ai-card">
-              <div className="absolute inset-0 bg-gradient-to-br from-codeweek-purple-900/50 via-codeweek-purple-800/30 to-codeweek-pink-900/50"></div>
-              
-              {/* Animated Background Grid */}
-              <div className="absolute inset-0 opacity-20">
-                <div className="absolute inset-0 bg-grid"></div>
-              </div>
-              
-              {/* Floating AI Elements */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <motion.div
-                  animate={{ rotateY: [0, 360] }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                  className="relative w-48 h-48"
-                >
-                  {/* Central Brain Core */}
-                  <motion.div
-                    animate={{ scale: [1, 1.1, 1] }}
-                    transition={{ duration: 3, repeat: Infinity }}
-                    className="absolute inset-0 rounded-full bg-gradient-to-br from-codeweek-purple-600/40 to-codeweek-pink-600/40 blur-xl"
-                  ></motion.div>
-                  
-                  <div className="absolute inset-4 rounded-full bg-gradient-to-br from-codeweek-purple-500/60 to-codeweek-pink-500/60 flex items-center justify-center">
-                    <Brain className="w-16 h-16 text-white" />
-                  </div>
-                  
-                  {/* Orbiting Elements */}
-                  {[...Array(6)].map((_, i) => (
-                    <motion.div
-                      key={`orbit-${i}`}
-                      className="absolute w-3 h-3 rounded-full bg-gradient-to-r from-codeweek-purple-400 to-codeweek-pink-400"
-                      style={{
-                        top: '50%',
-                        left: '50%',
-                        transformOrigin: '0 0',
-                      }}
-                      animate={{
-                        rotate: [0, 360],
-                        x: [0, 90 * Math.cos((i * 60 * Math.PI) / 180)],
-                        y: [0, 90 * Math.sin((i * 60 * Math.PI) / 180)],
-                      }}
-                      transition={{
-                        duration: 10 + i * 0.5,
-                        repeat: Infinity,
-                        ease: "linear",
-                      }}
-                    />
-                  ))}
-                </motion.div>
-              </div>
-              
-              {/* Data Stream Lines */}
-              <div className="absolute inset-0 overflow-hidden">
-                {[...Array(8)].map((_, i) => (
-                  <motion.div
-                    key={`stream-${i}`}
-                    className="absolute h-px bg-gradient-to-r from-transparent via-codeweek-purple-400 to-transparent"
-                    style={{
-                      width: '100%',
-                      top: `${15 + i * 10}%`,
-                      left: 0,
-                    }}
-                    animate={{
-                      x: ['-100%', '100%'],
-                    }}
-                    transition={{
-                      duration: 3 + i * 0.2,
-                      repeat: Infinity,
-                      ease: "linear",
-                      delay: i * 0.3,
-                    }}
-                  />
-                ))}
-              </div>
-              
-              {/* Overlay Text */}
-              <div className="absolute bottom-6 left-0 right-0 text-center">
-                <motion.p
-                  animate={{ opacity: [0.5, 1, 0.5] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                  className="text-sm font-medium text-codeweek-purple-200"
-                >
-                  Yapay Zeka • Etik • İnovasyon
-                </motion.p>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div

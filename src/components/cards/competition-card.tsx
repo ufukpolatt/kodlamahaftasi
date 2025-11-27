@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Calendar, Users, Clock, Trophy, Target, ArrowRight } from "lucide-react";
+import Image from "next/image";
 import {
   Dialog,
   DialogContent,
@@ -18,6 +19,7 @@ type CompetitionCardProps = {
   requirements?: string;
   duration?: string;
   judging?: string;
+  image?: string;
 };
 
 export function CompetitionCard({
@@ -27,6 +29,7 @@ export function CompetitionCard({
   requirements,
   duration,
   judging,
+  image,
 }: CompetitionCardProps) {
   return (
     <Dialog>
@@ -42,20 +45,36 @@ export function CompetitionCard({
             <div className="absolute top-0 left-0 w-full h-full bg-grid-light"></div>
           </div>
 
-          {/* Content */}
-          <div className="relative z-10 flex-1 flex flex-col p-8">
-            {/* Icon */}
-            <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <Target className="w-8 h-8 text-white" />
+          {/* Image Section */}
+          {image && (
+            <div className="relative -mx-6 -mt-6 mb-4 h-40 overflow-hidden">
+              <Image
+                src={image}
+                alt={title}
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                sizes="(max-width: 768px) 100vw, 400px"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-codeweek-dark/80 to-transparent"></div>
+              
+              {/* Trophy Badge */}
+              <div className="absolute top-4 right-4 flex items-center gap-2 bg-codeweek-dark/80 backdrop-blur-sm rounded-full px-3 py-1.5 border border-codeweek-purple-500/30">
+                <Trophy className="w-3 h-3 text-codeweek-purple-400" />
+                <span className="text-xs font-bold text-codeweek-purple-300">Yarışma</span>
+              </div>
             </div>
+          )}
+
+          {/* Content */}
+          <div className="relative z-10 flex-1 flex flex-col p-6 -mt-20">
 
             {/* Title */}
-            <h3 className="text-xl font-bold text-white mb-4 group-hover:gradient-text transition-all duration-300">
+            <h3 className="text-xl font-bold text-white mb-3 group-hover:gradient-text transition-all duration-300">
               {title}
             </h3>
 
             {/* Description */}
-            <p className="text-sm text-codeweek-purple-200 leading-relaxed mb-6">
+            <p className="text-sm text-codeweek-purple-200 mb-4 line-clamp-2 leading-relaxed">
               {desc}
             </p>
 
@@ -82,6 +101,25 @@ export function CompetitionCard({
 
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-codeweek-dark border-codeweek-purple-500/20">
         <DialogHeader>
+          {image && (
+            <div className="relative -mx-8 -mt-8 mb-6 h-64 overflow-hidden rounded-t-2xl">
+              <Image
+                src={image}
+                alt={title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 800px"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-codeweek-dark via-codeweek-dark/50 to-transparent"></div>
+              
+              {/* Trophy Badge */}
+              <div className="absolute top-6 right-6 flex items-center gap-2 bg-codeweek-dark/80 backdrop-blur-sm rounded-full px-4 py-2 border border-codeweek-purple-500/30">
+                <Trophy className="w-4 h-4 text-codeweek-purple-400" />
+                <span className="text-sm font-bold text-codeweek-purple-300">Yarışma</span>
+              </div>
+            </div>
+          )}
+
           <div className="flex items-center gap-3 mb-6">
             <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center">
               <Trophy className="w-8 h-8 text-white" />
@@ -100,8 +138,22 @@ export function CompetitionCard({
         <div className="space-y-8 py-6">
           {fullDesc && (
             <div>
-              <h4 className="mb-3 text-lg font-bold gradient-text">Açıklama</h4>
-              <p className="text-sm leading-relaxed text-codeweek-purple-200">{fullDesc}</p>
+              <h4 className="mb-3 text-lg font-bold gradient-text">Etkinlik Detayları</h4>
+              <div className="text-sm leading-relaxed text-codeweek-purple-200">
+                {fullDesc.split('\n\n').map((paragraph, index) => {
+                  if (paragraph.includes(':')) {
+                    const [title, ...contentParts] = paragraph.split(':');
+                    const content = contentParts.join(':').trim();
+                    return (
+                      <div key={index} className="mb-4">
+                        <h5 className="text-base font-semibold text-codeweek-pink-400 mb-2">{title}:</h5>
+                        <p className="pl-4">{content}</p>
+                      </div>
+                    );
+                  }
+                  return <p key={index} className="mb-4">{paragraph}</p>;
+                })}
+              </div>
             </div>
           )}
 
