@@ -30,7 +30,7 @@ export function Footer() {
                 whileHover={{ rotate: 360, scale: 1.1 }}
                 transition={{ duration: 0.5 }}
                 src="/logo.webp"
-                alt="CodeWeek Logo"
+                alt="KodlamaHaftası Logo"
                 className="w-12 h-12 rounded-xl"
               />
             </div>
@@ -105,7 +105,7 @@ export function Footer() {
               viewport={{ once: true }}
               className="flex items-center gap-2 text-xs text-codeweek-purple-400"
             >
-              <span>© {new Date().getFullYear()} CodeWeek Topluluğu.</span>
+              <span>© {new Date().getFullYear()} KodlamaHaftası Topluluğu.</span>
               <span className="text-codeweek-pink-400">Tüm hakları saklıdır.</span>
             </motion.div>
             

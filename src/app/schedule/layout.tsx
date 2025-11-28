@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Etkinlik Takvimi - CodeWeek",
+  title: "Etkinlik Takvimi - KodlamaHaftası",
   description: "8-12 Aralık tarihleri arasında Eyüboğlu Eğitim Kurumları'nda gerçekleşecek tüm etkinliklerin detaylı programı. Her gün için farklı temalar ve odak alanları.",
 };
 

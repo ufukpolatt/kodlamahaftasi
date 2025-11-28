@@ -20,6 +20,7 @@ type CompetitionCardProps = {
   duration?: string;
   judging?: string;
   image?: string;
+  level?: string;
 };
 
 export function CompetitionCard({
@@ -30,7 +31,11 @@ export function CompetitionCard({
   duration,
   judging,
   image,
+  level,
 }: CompetitionCardProps) {
+  // Determine if this is a high school competition (should show "Yarışma")
+  const isHighSchool = level === "Lise";
+  const competitionType = isHighSchool ? "Yarışma" : "Maraton";
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -60,7 +65,7 @@ export function CompetitionCard({
               {/* Trophy Badge */}
               <div className="absolute top-4 right-4 flex items-center gap-2 bg-codeweek-dark/80 backdrop-blur-sm rounded-full px-3 py-1.5 border border-codeweek-purple-500/30">
                 <Trophy className="w-3 h-3 text-codeweek-purple-400" />
-                <span className="text-xs font-bold text-codeweek-purple-300">Yarışma</span>
+                <span className="text-xs font-bold text-codeweek-purple-300">{competitionType}</span>
               </div>
             </div>
           )}
@@ -83,7 +88,7 @@ export function CompetitionCard({
               <div className="flex items-center gap-2">
                 <Trophy className="w-4 h-4 text-codeweek-pink-400" />
                 <span className="text-xs font-semibold text-codeweek-pink-400 uppercase tracking-wider">
-                  Yarışma
+                  {competitionType}
                 </span>
               </div>
               <div className="flex items-center gap-1 text-codeweek-purple-300 group-hover:text-codeweek-purple-200 transition-colors">
@@ -115,7 +120,7 @@ export function CompetitionCard({
               {/* Trophy Badge */}
               <div className="absolute top-6 right-6 flex items-center gap-2 bg-codeweek-dark/80 backdrop-blur-sm rounded-full px-4 py-2 border border-codeweek-purple-500/30">
                 <Trophy className="w-4 h-4 text-codeweek-purple-400" />
-                <span className="text-sm font-bold text-codeweek-purple-300">Yarışma</span>
+                <span className="text-sm font-bold text-codeweek-purple-300">{competitionType}</span>
               </div>
             </div>
           )}
@@ -127,7 +132,7 @@ export function CompetitionCard({
             <div>
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400 mb-2">
                 <Trophy className="w-4 h-4 text-codeweek-pink-400" />
-                <span>AI Yarışması</span>
+                <span>AI {competitionType}</span>
               </div>
               <DialogTitle className="text-3xl font-black gradient-text">{title}</DialogTitle>
             </div>
@@ -169,7 +174,22 @@ export function CompetitionCard({
                 <p className="text-sm font-medium text-white">{duration}</p>
               </div>
             )}
-            {requirements && (
+            {isHighSchool && (
+              <div className="ai-card rounded-xl p-4">
+                <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400 mb-2">
+                  Kayıt Linki
+                </p>
+                <a
+                  href="https://forms.gle/6d6sgsTotG9BYFcc8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-codeweek-purple-600 to-codeweek-pink-600 rounded-md hover:from-codeweek-purple-700 hover:to-codeweek-pink-700 transition-all duration-200"
+                >
+                  Kayıt Ol
+                </a>
+              </div>
+            )}
+            {!isHighSchool && requirements && (
               <div className="ai-card rounded-xl p-4">
                 <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400 mb-2">
                   Gereksinimler
@@ -177,7 +197,7 @@ export function CompetitionCard({
                 <p className="text-sm font-medium text-white">{requirements}</p>
               </div>
             )}
-            {judging && (
+            {!isHighSchool && judging && (
               <div className="md:col-span-2 ai-card rounded-xl p-4">
                 <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400 mb-2">
                   Değerlendirme

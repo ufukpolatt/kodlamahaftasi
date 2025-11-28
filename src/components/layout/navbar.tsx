@@ -38,7 +38,7 @@ export function Navbar() {
           >
             <img
               src="/logo.webp"
-              alt="CodeWeek Logo"
+              alt="KodlamaHaftası Logo"
               className="h-14 w-auto"
             />
           </motion.div>

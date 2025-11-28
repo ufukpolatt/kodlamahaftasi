@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { UserRound, Brain, Sparkles, ArrowRight, Calendar, MapPin, Award } from "lucide-react";
+import { UserRound, Sparkles, ArrowRight, Calendar, MapPin } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -74,23 +74,13 @@ export function SpeakerCard({
             <p className="text-sm text-codeweek-purple-300 mb-3 font-medium">
               {role}
             </p>
-            <div className="flex items-center justify-center gap-2 text-xs text-codeweek-pink-400">
-              <Brain className="w-3 h-3" />
-              <span className="font-semibold uppercase tracking-wider">AI Focus</span>
-            </div>
-            <p className="mt-3 text-sm text-codeweek-purple-200 leading-relaxed">
+            <p className="text-sm text-codeweek-purple-200 leading-relaxed">
               {topic}
             </p>
           </div>
 
           {/* Call to Action */}
-          <div className="flex items-center justify-between w-full mt-4 pt-4 border-t border-codeweek-purple-500/20">
-            <div className="flex items-center gap-2">
-              <Sparkles className="w-4 h-4 text-codeweek-pink-400" />
-              <span className="text-xs font-semibold text-codeweek-pink-400 uppercase tracking-wider">
-                AI Mentor
-              </span>
-            </div>
+          <div className="flex items-center justify-end w-full mt-4 pt-4 border-t border-codeweek-purple-500/20">
             <div className="flex items-center gap-1 text-codeweek-purple-300 group-hover:text-codeweek-purple-200 transition-colors">
               <span className="text-xs font-medium">Detaylar</span>
               <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
@@ -104,12 +94,6 @@ export function SpeakerCard({
 
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-codeweek-dark border-codeweek-purple-500/20">
         <DialogHeader>
-          <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400 mb-4">
-            <div className="flex items-center gap-2 bg-codeweek-purple-500/20 rounded-full px-3 py-1.5 border border-codeweek-purple-500/30">
-              <Brain className="w-3 h-3 text-codeweek-purple-400" />
-              <span className="text-codeweek-purple-300">AI Mentor</span>
-            </div>
-          </div>
 
           <DialogTitle className="text-3xl font-black gradient-text mb-2">{name}</DialogTitle>
           <DialogDescription className="text-base text-codeweek-purple-200">{role}</DialogDescription>
@@ -124,29 +108,10 @@ export function SpeakerCard({
           )}
 
           <div className="grid gap-6 md:grid-cols-2">
-            {experience && (
-              <div className="ai-card rounded-xl p-4">
-                <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400 mb-2">
-                  Deneyim
-                </p>
-                <p className="text-sm font-medium text-white">{experience}</p>
-              </div>
-            )}
-            {achievements && (
-              <div className="ai-card rounded-xl p-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <Award className="w-4 h-4 text-codeweek-pink-400" />
-                  <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400">
-                    Başarılar
-                  </p>
-                </div>
-                <p className="text-sm font-medium text-white">{achievements}</p>
-              </div>
-            )}
             {session && (
               <div className="ai-card rounded-xl p-4">
                 <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400 mb-2">
-                  Oturum
+                  Konu
                 </p>
                 <p className="text-sm font-medium text-white">{session}</p>
               </div>
@@ -175,12 +140,6 @@ export function SpeakerCard({
             )}
           </div>
 
-          <div className="ai-card rounded-xl p-4">
-            <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400 mb-2">
-              AI Odak Alanı
-            </p>
-            <p className="text-sm font-medium text-white">{topic}</p>
-          </div>
         </div>
       </DialogContent>
     </Dialog>

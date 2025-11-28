@@ -51,21 +51,18 @@ export function WorkshopCard({
 
           {/* Image Section */}
           {image && (
-            <div className="relative -mx-6 -mt-6 mb-4 h-40 overflow-hidden">
+            <div className="relative -mx-6 -mt-6 mb-4 h-52 overflow-hidden">
               <Image
                 src={image}
                 alt={title}
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
                 sizes="(max-width: 768px) 100vw, 400px"
+                quality={85}
+                priority={false}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-codeweek-dark/80 to-transparent"></div>
               
-              {/* AI Badge */}
-              <div className="absolute top-4 right-4 flex items-center gap-2 bg-codeweek-dark/80 backdrop-blur-sm rounded-full px-3 py-1.5 border border-codeweek-purple-500/30">
-                <Brain className="w-3 h-3 text-codeweek-purple-400" />
-                <span className="text-xs font-bold text-codeweek-purple-300">AI Lab</span>
-              </div>
             </div>
           )}
 
@@ -77,10 +74,6 @@ export function WorkshopCard({
                 <div className="flex items-center gap-1.5 bg-codeweek-purple-500/20 rounded-full px-3 py-1.5 border border-codeweek-purple-500/30">
                   <Calendar className="w-3 h-3 text-codeweek-purple-400" />
                   <span className="text-codeweek-purple-300">{level}</span>
-                </div>
-                <div className="flex items-center gap-1.5 bg-codeweek-pink-500/20 rounded-full px-3 py-1.5 border border-codeweek-pink-500/30">
-                  <Users className="w-3 h-3 text-codeweek-pink-400" />
-                  <span className="text-codeweek-pink-300">{capacity}</span>
                 </div>
               </div>
             </div>
@@ -100,7 +93,7 @@ export function WorkshopCard({
               <div className="flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-codeweek-pink-400" />
                 <span className="text-xs font-semibold text-codeweek-pink-400 uppercase tracking-wider">
-                  Interactive
+                  {level}
                 </span>
               </div>
               <div className="flex items-center gap-1 text-codeweek-purple-300 group-hover:text-codeweek-purple-200 transition-colors">
@@ -119,21 +112,17 @@ export function WorkshopCard({
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-codeweek-dark border-codeweek-purple-500/20">
         <DialogHeader>
           {image && (
-            <div className="relative -mx-8 -mt-8 mb-6 h-64 overflow-hidden rounded-t-2xl">
+            <div className="relative -mx-8 -mt-8 mb-6 h-96 overflow-hidden rounded-t-2xl">
               <Image
                 src={image}
                 alt={title}
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"
+                quality={90}
+                priority={true}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-codeweek-dark via-codeweek-dark/50 to-transparent"></div>
-              
-              {/* AI Badge */}
-              <div className="absolute top-6 right-6 flex items-center gap-2 bg-codeweek-dark/80 backdrop-blur-sm rounded-full px-4 py-2 border border-codeweek-purple-500/30">
-                <Brain className="w-4 h-4 text-codeweek-purple-400" />
-                <span className="text-sm font-bold text-codeweek-purple-300">AI Workshop</span>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-codeweek-dark/80"></div>
             </div>
           )}
 
@@ -141,10 +130,6 @@ export function WorkshopCard({
             <div className="flex items-center gap-2 bg-codeweek-purple-500/20 rounded-full px-3 py-1.5 border border-codeweek-purple-500/30">
               <Calendar className="w-3 h-3 text-codeweek-purple-400" />
               <span className="text-codeweek-purple-300">{level}</span>
-            </div>
-            <div className="flex items-center gap-2 bg-codeweek-pink-500/20 rounded-full px-3 py-1.5 border border-codeweek-pink-500/30">
-              <Users className="w-3 h-3 text-codeweek-pink-400" />
-              <span className="text-codeweek-pink-300">{capacity}</span>
             </div>
           </div>
 
@@ -159,36 +144,6 @@ export function WorkshopCard({
               <p className="text-sm leading-relaxed text-codeweek-purple-200">{fullDesc}</p>
             </div>
           )}
-
-          <div className="grid gap-6 md:grid-cols-2">
-            {instructor && (
-              <div className="ai-card rounded-xl p-4">
-                <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400 mb-2">
-                  AI Mentor
-                </p>
-                <p className="text-sm font-medium text-white">{instructor}</p>
-              </div>
-            )}
-            {duration && (
-              <div className="ai-card rounded-xl p-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <Clock className="w-4 h-4 text-codeweek-pink-400" />
-                  <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400">
-                    Süre
-                  </p>
-                </div>
-                <p className="text-sm font-medium text-white">{duration}</p>
-              </div>
-            )}
-            {prerequisites && (
-              <div className="md:col-span-2 ai-card rounded-xl p-4">
-                <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400 mb-2">
-                  Ön Gereksinimler
-                </p>
-                <p className="text-sm font-medium text-white">{prerequisites}</p>
-              </div>
-            )}
-          </div>
         </div>
       </DialogContent>
     </Dialog>

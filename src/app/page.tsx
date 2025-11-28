@@ -98,7 +98,7 @@ export default function Home() {
               <img src="/e_Logosu.png" alt="Logo" className="h-48 md:h-64 lg:h-72 w-auto opacity-90" />
             </div>
             <p className="text-xl md:text-2xl text-codeweek-purple-200 max-w-3xl mx-auto leading-relaxed">
-              CodeWeek Haftası'nda yapay zekanın sınırlarını zorlayarak,
+              KodlamaHaftası Haftası'nda yapay zekanın sınırlarını zorlayarak,
               <span className="gradient-text font-semibold"> teknolojiyi toplumsal faydaya </span>
               dönüştüren yenilikçi çözümler geliştiriyoruz.
             </p>
@@ -124,8 +124,8 @@ export default function Home() {
             </Button>
           </motion.div>
 
-          {/* AI Ethics Quick Links */}
-          <motion.div
+          {/* AI Ethics Quick Links - Hidden */}
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
@@ -162,32 +162,29 @@ export default function Home() {
                 </Link>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 
-      {/* AI Stats Section */}
+      {/* AI Stats Section - Hidden Participant, Workshop, and Mentor cards */}
       <section className="mx-auto w-[min(1400px,95%)]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="grid gap-6 md:grid-cols-4"
+          className="grid gap-6 md:grid-cols-1"
         >
-          {heroStats.map((stat, index) => (
+          {heroStats.filter(stat => !["Katılımcı", "Atölye", "Mentor"].includes(stat.label)).map((stat, index) => (
             <motion.div
               key={stat.label}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="ai-card neural-bg rounded-2xl p-8 text-center group cursor-pointer"
+              className="ai-card neural-bg rounded-2xl p-8 text-center group cursor-pointer max-w-md mx-auto"
             >
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-codeweek-purple-500 to-codeweek-pink-500 flex items-center justify-center group-hover:scale-110 transition-transform">
-                {index === 0 && <Brain className="w-8 h-8 text-white" />}
-                {index === 1 && <Code2 className="w-8 h-8 text-white" />}
-                {index === 2 && <Network className="w-8 h-8 text-white" />}
-                {index === 3 && <Zap className="w-8 h-8 text-white" />}
+                <Zap className="w-8 h-8 text-white" />
               </div>
               <p className="text-sm font-medium text-codeweek-purple-400 uppercase tracking-wider">{stat.label}</p>
               <p className="mt-2 text-4xl font-black gradient-text">{stat.value}</p>
@@ -247,8 +244,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AI Workshops Section */}
-      <section className="mx-auto w-[min(1400px,95%)] space-y-12">
+      {/* AI Workshops Section - Hidden */}
+      {/* <section className="mx-auto w-[min(1400px,95%)] space-y-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -281,10 +278,10 @@ export default function Home() {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
 
-      {/* AI Speakers Section */}
-      <section className="mx-auto w-[min(1400px,95%)] space-y-12">
+      {/* AI Speakers Section - Hidden */}
+      {/* <section className="mx-auto w-[min(1400px,95%)] space-y-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -317,7 +314,7 @@ export default function Home() {
             </motion.div>
           ))}
         </div>
-      </section>
+      </section> */}
 
     </div>
   );

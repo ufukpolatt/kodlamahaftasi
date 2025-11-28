@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "CodeWeek AI",
+  name: "KodlamaHaftası AI",
   description:
-    "Yapay zeka ve etik temalı CodeWeek haftası. Machine learning, AI ethics ve sorumlu inovasyon için bir araya geliyoruz.",
-  url: "https://codeweek-ai.example.com",
+    "Yapay zeka ve etik temalı KodlamaHaftası haftası. Machine learning, AI ethics ve sorumlu inovasyon için bir araya geliyoruz.",
+  url: "https://kodlamahaftasi-ai.example.com",
   ogImage: "/og-ai.png",
   contact: {
     email: "ai@codeweek.org",

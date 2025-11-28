@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: ["yapay zeka", "AI", "machine learning", "AI ethics", "CodeWeek", "teknoloji", "inovasyon"],
-  authors: [{ name: "CodeWeek AI Team" }],
+  keywords: ["yapay zeka", "AI", "machine learning", "AI ethics", "KodlamaHaftası", "teknoloji", "inovasyon"],
+  authors: [{ name: "KodlamaHaftası AI Team" }],
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
