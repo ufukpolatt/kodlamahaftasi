@@ -59,14 +59,12 @@ export function CompetitionCard({
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
                 sizes="(max-width: 768px) 100vw, 400px"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-codeweek-dark/80 to-transparent"></div>
               
-              {/* Trophy Badge */}
-              <div className="absolute top-4 right-4 flex items-center gap-2 bg-codeweek-dark/80 backdrop-blur-sm rounded-full px-3 py-1.5 border border-codeweek-purple-500/30">
-                <Trophy className="w-3 h-3 text-codeweek-purple-400" />
-                <span className="text-xs font-bold text-codeweek-purple-300">{competitionType}</span>
-              </div>
             </div>
           )}
 
@@ -114,14 +112,12 @@ export function CompetitionCard({
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-codeweek-dark via-codeweek-dark/50 to-transparent"></div>
               
-              {/* Trophy Badge */}
-              <div className="absolute top-6 right-6 flex items-center gap-2 bg-codeweek-dark/80 backdrop-blur-sm rounded-full px-4 py-2 border border-codeweek-purple-500/30">
-                <Trophy className="w-4 h-4 text-codeweek-purple-400" />
-                <span className="text-sm font-bold text-codeweek-purple-300">{competitionType}</span>
-              </div>
             </div>
           )}
 

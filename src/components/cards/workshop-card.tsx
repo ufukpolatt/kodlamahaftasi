@@ -60,6 +60,9 @@ export function WorkshopCard({
                 sizes="(max-width: 768px) 100vw, 400px"
                 quality={85}
                 priority={false}
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-codeweek-dark/80 to-transparent"></div>
               
@@ -121,6 +124,9 @@ export function WorkshopCard({
                 sizes="(max-width: 768px) 100vw, 800px"
                 quality={90}
                 priority={true}
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-codeweek-dark/80"></div>
             </div>
