@@ -60,6 +60,7 @@ export function CompetitionCard({
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
                 sizes="(max-width: 768px) 100vw, 400px"
                 onError={(e) => {
+                  console.error(`Image failed to load: ${image}`);
                   e.currentTarget.style.display = 'none';
                 }}
               />
@@ -113,6 +114,7 @@ export function CompetitionCard({
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"
                 onError={(e) => {
+                  console.error(`Image failed to load: ${image}`);
                   e.currentTarget.style.display = 'none';
                 }}
               />

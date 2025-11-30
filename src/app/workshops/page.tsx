@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brain, Cpu, Target } from "lucide-react";
+import { Brain, Cpu, Target, Baby } from "lucide-react";
 import { workshops } from "@/data/mockData";
 import { WorkshopCard } from "@/components/cards/workshop-card";
 
 export default function WorkshopsPage() {
+  const preschoolWorkshops = workshops.filter((w) => w.level === "Anaokulu");
   const primarySchoolWorkshops = workshops.filter((w) => w.level === "İlkokul");
   const middleSchoolWorkshops = workshops.filter((w) => w.level === "Ortaokul");
   const highSchoolWorkshops = workshops.filter((w) => w.level === "Lise");
@@ -33,11 +34,43 @@ export default function WorkshopsPage() {
 
       {/* Workshop Categories */}
       <section className="mx-auto w-[min(1400px,95%)] space-y-16">
+        {/* Preschool Workshops */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="space-y-8"
+        >
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center">
+              <Baby className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold gradient-text">Anaokulu Atölyeleri</h2>
+            </div>
+          </div>
+          
+          <div className="grid gap-8 md:grid-cols-2">
+            {preschoolWorkshops.map((workshop, index) => (
+              <motion.div
+                key={workshop.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <WorkshopCard {...workshop} />
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
         {/* Beginner Workshops */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
           className="space-y-8"
         >
           <div className="flex items-center gap-3 mb-8">
@@ -56,7 +89,7 @@ export default function WorkshopsPage() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: 0.2 + index * 0.1 }}
               >
                 <WorkshopCard {...workshop} />
               </motion.div>
@@ -69,7 +102,7 @@ export default function WorkshopsPage() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.3 }}
           className="space-y-8"
         >
           <div className="flex items-center gap-3 mb-8">
@@ -88,7 +121,7 @@ export default function WorkshopsPage() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.3 + index * 0.1 }}
+                transition={{ delay: 0.4 + index * 0.1 }}
               >
                 <WorkshopCard {...workshop} />
               </motion.div>
@@ -101,7 +134,7 @@ export default function WorkshopsPage() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.5 }}
           className="space-y-8"
         >
           <div className="flex items-center gap-3 mb-8">
@@ -120,7 +153,7 @@ export default function WorkshopsPage() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.5 + index * 0.1 }}
+                transition={{ delay: 0.6 + index * 0.1 }}
               >
                 <WorkshopCard {...workshop} />
               </motion.div>

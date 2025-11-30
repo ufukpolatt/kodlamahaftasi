@@ -61,6 +61,7 @@ export function WorkshopCard({
                 quality={85}
                 priority={false}
                 onError={(e) => {
+                  console.error(`Image failed to load: ${image}`);
                   e.currentTarget.style.display = 'none';
                 }}
               />
@@ -125,6 +126,7 @@ export function WorkshopCard({
                 quality={90}
                 priority={true}
                 onError={(e) => {
+                  console.error(`Image failed to load: ${image}`);
                   e.currentTarget.style.display = 'none';
                 }}
               />

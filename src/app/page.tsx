@@ -65,27 +65,9 @@ export default function Home() {
       <section className="relative mx-auto w-[min(1400px,95%)] -mt-2">
         <div className="relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-center mb-12"
-          >
-            <motion.span
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.3 }}
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-codeweek-purple-500/20 to-codeweek-pink-500/20 border border-codeweek-purple-500/30 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-codeweek-purple-300 backdrop-blur-sm"
-            >
-              <Sparkles className="w-4 h-4" />
-              8-12 Aralık • Eyüboğlu Eğitim Kurumları
-              <Zap className="w-4 h-4" />
-            </motion.span>
-          </motion.div>
-
-          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0.2 }}
             className="text-center space-y-8 mb-8"
           >
             <div className="flex items-center justify-between w-full max-w-6xl mx-auto">
@@ -108,20 +90,26 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
+            className="text-center mb-12"
+          >
+            <motion.span
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5 }}
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-codeweek-purple-500/20 to-codeweek-pink-500/20 border border-codeweek-purple-500/30 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-codeweek-purple-300 backdrop-blur-sm"
+            >
+              <Sparkles className="w-4 h-4" />
+              8-12 Aralık • Eyüboğlu Eğitim Kurumları
+              <Zap className="w-4 h-4" />
+            </motion.span>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
             className="flex flex-wrap justify-center gap-6 mb-20"
           >
-            <Button size="lg" className="bg-gradient-to-r from-codeweek-purple-600 to-codeweek-pink-600 hover:from-codeweek-purple-700 hover:to-codeweek-pink-700 text-white border-0 shadow-glow" asChild>
-              <Link href="/schedule" className="flex items-center gap-2">
-                <Cpu className="w-5 h-5" />
-                Etkinlik Takvimini Keşfet
-              </Link>
-            </Button>
-            <Button variant="secondary" size="lg" className="bg-codeweek-muted/50 border border-codeweek-purple-500/30 text-codeweek-purple-200 hover:bg-codeweek-muted/70" asChild>
-              <Link href="/workshops" className="flex items-center gap-2">
-                <Brain className="w-5 h-5" />
-                Atölyeler
-              </Link>
-            </Button>
           </motion.div>
 
           {/* AI Ethics Quick Links - Hidden */}

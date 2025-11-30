@@ -31,7 +31,7 @@ export function Footer() {
                 transition={{ duration: 0.5 }}
                 src="/logo.webp"
                 alt="KodlamaHaftası Logo"
-                className="w-12 h-12 rounded-xl"
+                className="w-28 h-28 rounded-xl object-contain"
               />
             </div>
             <p className="text-sm text-codeweek-purple-300 leading-relaxed">
@@ -105,8 +105,15 @@ export function Footer() {
               viewport={{ once: true }}
               className="flex items-center gap-2 text-xs text-codeweek-purple-400"
             >
-              <span>© {new Date().getFullYear()} KodlamaHaftası Topluluğu.</span>
-              <span className="text-codeweek-pink-400">Tüm hakları saklıdır.</span>
+              <span>© {new Date().getFullYear()} Eğitim:Eyüboğlu.</span>
+              <Link
+                href="https://www.eyuboglu.k12.tr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-codeweek-pink-400 hover:text-codeweek-pink-300 transition-colors underline"
+              >
+                Tüm hakları saklıdır
+              </Link>
             </motion.div>
             
             <motion.div
