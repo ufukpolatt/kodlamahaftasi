@@ -11,7 +11,7 @@ export const siteConfig = {
   socials: [
     { label: "Twitter", href: "https://twitter.com/codeweekai" },
     { label: "LinkedIn", href: "https://linkedin.com/company/codeweek-ai" },
-    { label: "GitHub", href: "https://github.com/codeweek-ai" },
+    { label: "GitHub", href: "https://github.com/ufukpolatt/kodlamahaftasi" },
   ],
   navLinks: [
     { label: "Anasayfa", href: "/" },
