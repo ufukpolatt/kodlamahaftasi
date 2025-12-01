@@ -53,7 +53,6 @@ export default function SchedulePage() {
               <div>
                 <h2 className="text-3xl font-bold gradient-text">Gün {dayIndex + 1}</h2>
                 <p className="text-lg text-codeweek-purple-200">{day.day} • {day.date}</p>
-                <p className="text-xl text-white mt-2">{day.summary}</p>
               </div>
               <div className="ml-auto">
                 <div className="ai-card rounded-full px-6 py-3 flex items-center gap-2">
@@ -72,7 +71,12 @@ export default function SchedulePage() {
                   viewport={{ once: true }}
                   transition={{ delay: dayIndex * 0.1 + eventIndex * 0.05 }}
                 >
-                  <EventCard {...event} />
+                  <EventCard
+                    title={event.title}
+                    time={event.time}
+                    track={event.track}
+                    speaker={event.speaker}
+                  />
                 </motion.div>
               ))}
             </div>

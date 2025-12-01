@@ -7,9 +7,10 @@ type EventCardProps = {
   title: string;
   time: string;
   track: string;
+  speaker?: string;
 };
 
-export function EventCard({ title, time, track }: EventCardProps) {
+export function EventCard({ title, time, track, speaker }: EventCardProps) {
   return (
     <motion.div
       whileHover={{ x: 5, scale: 1.02 }}
@@ -41,6 +42,13 @@ export function EventCard({ title, time, track }: EventCardProps) {
       <h3 className="text-sm font-bold text-white mb-2 relative z-10 group-hover:gradient-text transition-all duration-300">
         {title}
       </h3>
+      
+      {/* Speaker */}
+      {speaker && speaker.trim() !== "" && (
+        <p className="text-xs text-codeweek-purple-300 mb-2 relative z-10">
+          Konuşmacı: {speaker}
+        </p>
+      )}
       
       {/* AI Badge */}
       <div className="flex items-center gap-2 relative z-10">

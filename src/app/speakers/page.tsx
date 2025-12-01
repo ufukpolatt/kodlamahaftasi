@@ -57,6 +57,7 @@ export default function SpeakersPage() {
                 name={speaker.name}
                 role={speaker.role}
                 topic={speaker.topic}
+                image={speaker.image}
                 bio={speaker.bio}
                 experience={speaker.experience}
                 achievements={speaker.achievements}

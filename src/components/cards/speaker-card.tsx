@@ -57,9 +57,17 @@ export function SpeakerCard({
             className="relative z-10 mb-4"
           >
             <div className="w-20 h-20 rounded-full bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 p-0.5">
-              <div className="w-full h-full rounded-full bg-codeweek-dark flex items-center justify-center">
-                <UserRound className="w-10 h-10 text-codeweek-purple-300" />
-              </div>
+              {image ? (
+                <img
+                  src={image}
+                  alt={name}
+                  className="w-full h-full rounded-full object-cover"
+                />
+              ) : (
+                <div className="w-full h-full rounded-full bg-codeweek-dark flex items-center justify-center">
+                  <UserRound className="w-10 h-10 text-codeweek-purple-300" />
+                </div>
+              )}
             </div>
             <div className="absolute -top-1 -right-1 w-6 h-6 bg-gradient-to-br from-codeweek-pink-500 to-codeweek-purple-500 rounded-full flex items-center justify-center">
               <Sparkles className="w-3 h-3 text-white" />
@@ -93,20 +101,21 @@ export function SpeakerCard({
       </DialogTrigger>
 
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-codeweek-dark border-codeweek-purple-500/20">
-        <DialogHeader>
-
+        <DialogHeader className="flex flex-col items-center text-center">
+          {image && (
+            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 p-0.5 mb-4">
+              <img
+                src={image}
+                alt={name}
+                className="w-full h-full rounded-full object-cover"
+              />
+            </div>
+          )}
           <DialogTitle className="text-3xl font-black gradient-text mb-2">{name}</DialogTitle>
           <DialogDescription className="text-base text-codeweek-purple-200">{role}</DialogDescription>
         </DialogHeader>
 
         <div className="space-y-8 py-6">
-          {bio && (
-            <div>
-              <h4 className="mb-3 text-lg font-bold gradient-text">Hakkında</h4>
-              <p className="text-sm leading-relaxed text-codeweek-purple-200">{bio}</p>
-            </div>
-          )}
-
           <div className="grid gap-6 md:grid-cols-2">
             {session && (
               <div className="ai-card rounded-xl p-4">

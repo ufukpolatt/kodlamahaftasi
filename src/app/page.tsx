@@ -80,9 +80,9 @@ export default function Home() {
               <img src="/e_Logosu.png" alt="Logo" className="h-48 md:h-64 lg:h-72 w-auto opacity-90" />
             </div>
             <p className="text-xl md:text-2xl text-codeweek-purple-200 max-w-3xl mx-auto leading-relaxed">
-              KodlamaHaftası Haftası'nda yapay zekanın sınırlarını zorlayarak,
-              <span className="gradient-text font-semibold"> teknolojiyi toplumsal faydaya </span>
-              dönüştüren yenilikçi çözümler geliştiriyoruz.
+              Bu yıl Kodlama Haftası'nın odağında, yapay zekânın gücü ile etik kararların sorumluluğu arasındaki dengeyi keşfetmek var;
+              <span className="gradient-text font-semibold"> yapay zekâ geliştirirken etik düşünmeyi, 
+              etik düşünürken de teknolojiyi</span> doğru kullanmayı öğreniyoruz.
             </p>
           </motion.div>
 
@@ -224,7 +224,13 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white mb-6">{day.summary}</h3>
               <div className="space-y-4">
                 {day.events.slice(0, 3).map((event) => (
-                  <EventCard key={event.title} {...event} />
+                  <EventCard
+                    key={event.title}
+                    title={event.title}
+                    time={event.time}
+                    track={event.track}
+                    speaker={event.speaker}
+                  />
                 ))}
               </div>
             </motion.div>
