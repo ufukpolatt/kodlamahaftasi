@@ -221,7 +221,6 @@ export default function Home() {
                   <Cpu className="w-6 h-6 text-white" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-white mb-6">{day.summary}</h3>
               <div className="space-y-4">
                 {day.events.slice(0, 3).map((event) => (
                   <EventCard
