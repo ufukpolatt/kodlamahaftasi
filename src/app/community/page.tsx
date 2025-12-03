@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Heart, Users, BookOpen, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function CommunityPage() {
   return (
@@ -66,23 +67,39 @@ export default function CommunityPage() {
               </div>
               
               <p className="text-base text-codeweek-purple-200 leading-relaxed mb-6">
-                Okulumuzda düzenlenecek olan interaktif aile etkinliğinde, çocuklarınızla birlikte
-                teknoloji projeleri geliştirecek, kodlama temellerini öğrenecek ve eğlenceli
-                problem çözme aktivitelerine katılacaksınız.
+                Siz değerli velilerimiz ve öğrencilerimiz ile;
               </p>
               
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full"></div>
-                  <span className="text-sm text-codeweek-purple-200">Robotik ve kodlama atölyesi</span>
+                  <span className="text-sm text-codeweek-purple-200">Kodlamayı eğlenceli bir şekilde deneyimleyeceğiz.</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full"></div>
-                  <span className="text-sm text-codeweek-purple-200">Ailecek problem çözme oyunları</span>
+                  <span className="text-sm text-codeweek-purple-200">Aile katılımı ile öğrenmeyi güçlendireceğiz.</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full"></div>
-                  <span className="text-sm text-codeweek-purple-200">Yaratıcı teknoloji projeleri</span>
+                  <span className="text-sm text-codeweek-purple-200">Algoritma, yapay zekâ ve blok kodlama etkinliklerini keşfedeceğiz.</span>
+                </div>
+              </div>
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-bold text-white mb-3">Etkinliklerimiz:</h4>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full"></div>
+                    <span className="text-sm text-codeweek-purple-200">Hanoi Kuleleri – Algoritma ve Problem Çözme</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full"></div>
+                    <span className="text-sm text-codeweek-purple-200">Teachable Machine – Makine Öğrenmesi Deneyi</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full"></div>
+                    <span className="text-sm text-codeweek-purple-200">Code.org Dans Partisi – Blok Kodlama Eğlencesi</span>
+                  </div>
                 </div>
               </div>
               
@@ -92,10 +109,6 @@ export default function CommunityPage() {
                   <span className="text-sm font-medium text-codeweek-purple-300">Cumartesi, 10:00 - 14:00</span>
                 </div>
               </div>
-              
-              <Button className="w-full bg-gradient-to-r from-codeweek-purple-600 to-codeweek-pink-600 hover:from-codeweek-purple-700 hover:to-codeweek-pink-700 text-white border-0">
-                Yüz Yüze Etkinliğe Kaydol
-              </Button>
             </div>
             
             {/* Background Effects */}
@@ -127,22 +140,384 @@ export default function CommunityPage() {
                 herhangi bir zamanda yapabilirsiniz.
               </p>
               
-              <div className="space-y-3 mb-6">
-                <h4 className="text-sm font-bold uppercase tracking-wider text-codeweek-pink-400 mb-3">
+              <div className="space-y-4 mb-6">
+                <h4 className="text-sm font-bold uppercase tracking-wider text-codeweek-pink-400">
                   Evde Yapılabilecek Etkinlikler
                 </h4>
-                <Button variant="outline" className="w-full justify-start border-codeweek-purple-500/30 text-codeweek-purple-200 hover:bg-codeweek-purple-500/10">
-                  <span className="mr-2">🎮</span> Kodlama Oyunları
-                </Button>
-                <Button variant="outline" className="w-full justify-start border-codeweek-purple-500/30 text-codeweek-purple-200 hover:bg-codeweek-purple-500/10">
-                  <span className="mr-2">🤖</span> Basit Robot Projesi
-                </Button>
-                <Button variant="outline" className="w-full justify-start border-codeweek-purple-500/30 text-codeweek-purple-200 hover:bg-codeweek-purple-500/10">
-                  <span className="mr-2">🎨</span> Dijital Sanat Atölyesi
-                </Button>
-                <Button variant="outline" className="w-full justify-start border-codeweek-purple-500/30 text-codeweek-purple-200 hover:bg-codeweek-purple-500/10">
-                  <span className="mr-2">🔍</span> Problem Çözme Aktiviteleri
-                </Button>
+                
+                <Accordion type="multiple" className="w-full space-y-3">
+                  {/* Anaokulu Section */}
+                  <AccordionItem value="anaokulu" className="border-codeweek-purple-500/30">
+                    <AccordionTrigger className="text-codeweek-purple-200 hover:text-white">
+                      <div className="flex items-center gap-3">
+                        <span className="w-8 h-8 rounded-full bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 flex items-center justify-center text-sm font-bold">A</span>
+                        <span>Anaokulu</span>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="space-y-4">
+                        <a href="https://docs.google.com/presentation/d/192ph4Tdi6tfKHAUp9pThwN35MF8F7-F6/edit?slide=id.p1#slide=id.p1" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🏠
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">DEENO'YU EVİNE ULAŞTIRIN!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Deeno'nun evine heyecan verici bir yolculuk için hazır mısınız? Ailecek bir araya gelip evin yolunu kodlayarak belirleyin. Engelleri aşarken eğlenmek için birbirinize yardımcı olun!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://game.rodocodo.com/hour-of-code/" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🐒
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">RODOCODO İLE KODLAMAYA YOLCULUK!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Rodocodo'nun muhteşem ''KodSaati'' oyunuyla birlikte, ailenizle bir araya gelip birlikte kodlama dünyasına adım atın. Beraber öğrenmek ve eğlenmek için harika bir fırsat!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://www.youtube.com/watch?v=JoKTqHCni0M" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                💃
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">DANS EDEREK DÖNGÜLERİ ÖĞRENİN!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Ailenle birlikte, basit dans hareketlerini tekrar ederek programlamadaki döngü kavramını keşfedebilirsin!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://app.codemonkey.com/junior/chapters/sequencing/challenges/1" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🐵
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">CODE MONKEY JR İLE EĞLENCELİ KODLAMA SERÜVENİ!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Code Monkey ile hem öğrenip hem eğlenerek, evinizde keyifli bir kodlama macerasına başlayabilirsiniz!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://videos.code.org/csf/my-robotic-friends-activity.mp4" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🤖
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">ROBOT ARKADAŞIM!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Bu bağlantısız etkinliği ailecek oynayabilir, "robot" olarak görev alarak bardakları farklı desenlerde dizme talimatları verip, algoritmanın gücünü deneyimleyebilirsiniz.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                  
+                  {/* 1. Sınıf Section */}
+                  <AccordionItem value="sinif-1" className="border-codeweek-purple-500/30">
+                    <AccordionTrigger className="text-codeweek-purple-200 hover:text-white">
+                      <div className="flex items-center gap-3">
+                        <span className="w-8 h-8 rounded-full bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 flex items-center justify-center text-sm font-bold">1</span>
+                        <span>1. Sınıf</span>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="space-y-4">
+                        <a href="https://drive.google.com/drive/u/5/folders/1N5pOlE20U6P4IMYgj_ifLjvuyY3_o_qS" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🐟
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">BALIĞIN MACERA YOLU!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Balığımızın yavrularına kavuşması için yön kartlarını kullanarak yolu kodlayın! Engelleri birlikte aşın, ailece eğlenceli bir keşif yolculuğuna çıkın!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://codejr.org/scratchjr/index.html" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🐱
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">SCRATCH JR İLE MİNİ KODLAMA MACERASI</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Renkli blokları birleştirerek kendi hikâyeni canlandırmaya hazır mısın? ScratchJr ile karakterlere hareket ver, ses ekle, sahneleri değiştir ve hayal gücünü kod satırlarına dönüştür!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://studio.code.org/courses/courseb-2025/units/1/lessons/3/levels/1" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                💻
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">CODE.ORG İLE KODLA, KEŞFET, EĞLEN</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Blokları birleştir, karakterleri hareket ettir, oyun ve hikâyeni kendin yarat! Code.org ile eğlenceli ve kolay bir şekilde kodlama dünyasına adım at!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://lightbot.lu" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🤖
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">LIGHT BOT İLE ÖĞRENMEYE BAŞLA</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Robotu doğru yola yönlendir, blokları birleştir ve mini görevleri tamamla! Lightbot ile eğlenceli bir şekilde kodlama mantığını öğren.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://www.kodable.com" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🎮
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">KODABLE İLE OYNA VE ÖĞREN</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Labirentleri çöz, karakterleri yönlendir ve kendi mini oyunlarını yarat! Kodable ile blokları birleştirerek eğlenceli ve kolay bir şekilde kodlama dünyasına adım at.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                  
+                  {/* 2. Sınıf Section */}
+                  <AccordionItem value="sinif-2" className="border-codeweek-purple-500/30">
+                    <AccordionTrigger className="text-codeweek-purple-200 hover:text-white">
+                      <div className="flex items-center gap-3">
+                        <span className="w-8 h-8 rounded-full bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 flex items-center justify-center text-sm font-bold">2</span>
+                        <span>2. Sınıf</span>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="space-y-4">
+                        <a href="https://code.org/curriculum/course2/14/Activity14-BinaryBracelets.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                📿
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">BINARY BILEZİK TASARLAYIN!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Binary bileziklerle, harf ve sayıları sıfırlar(0) ve birler (1) le temsil ederek, kendi özel bileziklerinizi yaratabilirsiniz. Bu eğlenceli etkinlikte ailenizle bir araya gelerek kodlamayı keşfedin ve birlikte unutulmaz anılar biriktirin!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://studio.code.org/courses/oceans/units/1/lessons/1/levels/1" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🌊
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">YAPAY ZEKA İLE OKYANUSLARI KORUYUN!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Okyanuslar İç n Yapay Zeka ders , kodlama becerileriniz geliştirirken etik sorunlara ve dünya sorunlarına nasıl çöüm getirebileceğinizi keşfetmeniz için muhteşem bir fırsat Sunuyor!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://www.youtube.com/watch?v=JoKTqHCni0M&feature=youtu.be" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                💃
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">DANS EDEREK DÖNGÜLERİ ÖĞRENİN!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Ailenle birlikte, basit dans hareketlerini tekrar ederek programlamadaki döngü kavramını keşfedebilirsin!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://app.codemonkey.com/challenges/0" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🐵
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">CODE MONKEY İLE EĞLENCELİ KODLAMA SERÜVENİ!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  CodeMonkey ile hem öğrenip hem eğlenerek, evinizde keyifli bir kodlama macerasına başlayabilirsiniz!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://www.hedy.org/hedy#print_command" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🚀
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">HEDY İLE KODLAMA</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Hadi, gerçek bir kod sihirbazı gibi eğlenceli kodlar yazmaya başla! 🚀 💻 Ailenle beraber programcı gibi satır kodları yazabilirsiniz!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                  
+                  {/* 3. Sınıf Section */}
+                  <AccordionItem value="sinif-3" className="border-codeweek-purple-500/30">
+                    <AccordionTrigger className="text-codeweek-purple-200 hover:text-white">
+                      <div className="flex items-center gap-3">
+                        <span className="w-8 h-8 rounded-full bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 flex items-center justify-center text-sm font-bold">3</span>
+                        <span>3. Sınıf</span>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="space-y-4">
+                        <a href="https://runmarco.com" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🏃‍♂️
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">RUN MARCO- MARCO İLE MACERA BAŞLASIN!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Ailenle birlikte Marco'yu yönlendirerek basit komutlarla programlamayı keşfet! Eğlenerek öğren, adım adım kodlama dünyasına koş!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://studio.code.org/courses/dance-2019/units/1/lessons/1/levels/1" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🕺
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">DANCE PARTY-KODLA, DANS ET, ŞEKİLLENDİR!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Kod bloklarını sürükle‐bırak yaparak kendi dans partisinin koreografisini oluştur! Müzik aç, karakteri sahneye çıkar ve kodla dans ettir hem eğlen hem de kodlama temellerini keşfet!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://www.codeforlife.education/rapidrouter/" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🚚
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">CODE FOR LIFE- ADIM ADIM KODLAMA</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Ailenle birlikte basit dans adımlarını tekrar ederek, programlamadaki döngüleri keşfet!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://blockly.games" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🧩
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">BLOKLARI BİRLEŞTİR, KODUNU YARAT</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Sürükle-bırak bloklarla kendi oyunlarını ailenle birlikte oluştur!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <a href="https://little-dot.toxicode.fr" target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="bg-gradient-to-br from-codeweek-purple-500/10 to-codeweek-pink-500/10 border border-codeweek-purple-500/20 rounded-xl p-4 hover:border-codeweek-purple-500/40 hover:from-codeweek-purple-500/20 hover:to-codeweek-pink-500/20 transition-all duration-300 group">
+                            <div className="flex items-start gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                                🎯
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="font-bold text-white mb-2 group-hover:gradient-text transition-colors">KARTINI SEÇ, YOLUNU KODLA!</h4>
+                                <p className="text-sm text-codeweek-purple-200 leading-relaxed">
+                                  Her seviyede kartlardan doğru kodları seç, beyaz noktayı turuncu kareye ulaştır. Algoritma, döngü ve şartları keşfederek adım adım ilerle!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </div>
               
               <p className="text-xs text-codeweek-purple-300 italic">
