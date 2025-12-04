@@ -43,10 +43,10 @@ export function EventCard({ title, time, track, speaker }: EventCardProps) {
         {title}
       </h3>
       
-      {/* Speaker */}
+      {/* Speaker/Participants */}
       {speaker && speaker.trim() !== "" && (
         <p className="text-xs text-codeweek-purple-300 mb-2 relative z-10">
-          Konuşmacı: {speaker}
+          {speaker.startsWith("Konuşmacı:") ? speaker : `Katılımcılar: ${speaker}`}
         </p>
       )}
       

@@ -43,7 +43,7 @@ export default function CommunityPage() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold gradient-text mb-4">4. Sınıflar İçin Aile Etkinlikleri</h2>
+          <h2 className="text-3xl font-bold gradient-text mb-4">Aile Etkinlikleri</h2>
           <p className="text-lg text-codeweek-purple-200 max-w-2xl mx-auto">
             Çocuklarınızla birlikte teknolojiyi keşfedin, öğrenin ve eğlenin
           </p>
@@ -63,7 +63,7 @@ export default function CommunityPage() {
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center">
                   <Users className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold gradient-text">Yüz Yüze Aile Etkinliği</h3>
+                <h3 className="text-2xl font-bold gradient-text">4. Sınıflar İçin Yüz Yüze Aile Etkinliği</h3>
               </div>
               
               <p className="text-base text-codeweek-purple-200 leading-relaxed mb-6">
@@ -103,12 +103,7 @@ export default function CommunityPage() {
                 </div>
               </div>
               
-              <div className="flex items-center gap-4 mb-6">
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-4 h-4 text-codeweek-purple-400" />
-                  <span className="text-sm font-medium text-codeweek-purple-300">Cumartesi, 10:00 - 14:00</span>
-                </div>
-              </div>
+             
             </div>
             
             {/* Background Effects */}
@@ -543,7 +538,7 @@ export default function CommunityPage() {
           className="space-y-12"
         >
           <div className="text-center">
-            <h2 className="text-3xl font-bold gradient-text mb-4">Veli Program Takvimi</h2>
+            <h2 className="text-3xl font-bold gradient-text mb-4">4. Sınıf Yüz Yüze Veli Etkinliği Takvimi</h2>
             <p className="text-lg text-codeweek-purple-200 max-w-2xl mx-auto">
               Hafta boyunca devam edecek veli katılım etkinlikleri
             </p>
@@ -552,44 +547,64 @@ export default function CommunityPage() {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                day: "Pazartesi",
-                title: "Teknolojiye Giriş",
-                time: "14:00 - 16:00",
-                description: "Veliler için temel teknoloji kavramları ve güvenlik önlemleri"
+                day: "ÇAMLICA EYÜBOĞLU",
+                title: "Salı",
+                date: "10.12.2025",
+                time: "16:15 - 17:15",
+                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
               },
               {
-                day: "Salı",
-                title: "AI ve Eğitim",
-                time: "15:00 - 17:00",
-                description: "Yapay zekanın eğitimdeki rolü ve veliler için rehberlik"
+                day: "ÇAMLICA EYÜBOĞLU",
+                title: "Çarşamba",
+                date: "11.12.2025",
+                time: "16:15 - 17:15",
+                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
               },
               {
-                day: "Çarşamba",
-                title: "Dijital Vatandaşlık",
-                time: "14:00 - 16:00",
-                description: "Çocuklarınızın dijital dünyada güvenli gezinmesi için ipuçları"
+                day: "BURÇAK EYÜBOĞLU",
+                title: "Pazar",
+                date: "08.12.2025",
+                time: "16:15 - 17:15",
+                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
               },
               {
-                day: "Perşembe",
-                title: "Kodlama Atölyesi",
-                time: "15:00 - 17:00",
-                description: "Çocuklarınızla birlikte katılabileceğiniz pratik kodlama seansı"
+                day: "BURÇAK EYÜBOĞLU",
+                title: "Salı",
+                date: "10.12.2025",
+                time: "16:15 - 17:15",
+                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
               },
               {
-                day: "Cuma",
-                title: "Gelecek Teknolojiler",
-                time: "14:00 - 16:00",
-                description: "Eğitimde gelecek trendler ve velilerin rolü"
+                day: "KEMERBURGAZ EYÜBOĞLU",
+                title: "Salı",
+                date: "10.12.2025",
+                time: "16:15 - 17:15",
+                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
               },
               {
-                day: "Cumartesi",
-                title: "Aile Hackathon'u",
-                time: "10:00 - 16:00",
-                description: "Ailecek birlikte teknoloji projeleri geliştirme yarışması"
+                day: "KEMERBURGAZ EYÜBOĞLU",
+                title: "Çarşamba",
+                date: "11.12.2025",
+                time: "16:15 - 17:15",
+                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
+              },
+              {
+                day: "DOĞU ATAŞEHİR EYÜBOĞLU",
+                title: "Pazartesi",
+                date: "09.12.2025",
+                time: "16:15 - 17:15",
+                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
+              },
+              {
+                day: "DOĞU ATAŞEHİR EYÜBOĞLU",
+                title: "Çarşamba",
+                date: "11.12.2025",
+                time: "16:15 - 17:15",
+                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
               }
             ].map((event, index) => (
               <motion.div
-                key={event.day}
+                key={`${event.day}-${event.title}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -610,13 +625,22 @@ export default function CommunityPage() {
                     </div>
                   </div>
                   
-                  <h3 className="text-lg font-bold text-white mb-3 group-hover:gradient-text transition-colors">
+                  <h3 className="text-lg font-bold text-white mb-1 group-hover:gradient-text transition-colors">
                     {event.title}
                   </h3>
                   
-                  <p className="text-sm text-codeweek-purple-200 leading-relaxed">
-                    {event.description}
+                  <p className="text-xs text-codeweek-pink-400 mb-3">
+                    {event.date}
                   </p>
+                  
+                  <div className="space-y-2">
+                    {event.description.map((activity, idx) => (
+                      <p key={idx} className="text-sm text-codeweek-purple-200 leading-relaxed flex items-start gap-2">
+                        <span className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full mt-1.5 flex-shrink-0"></span>
+                        {activity}
+                      </p>
+                    ))}
+                  </div>
                 </div>
                 
                 {/* Hover Effect */}
