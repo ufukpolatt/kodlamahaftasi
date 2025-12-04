@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MessageCircle, Send, CheckCircle, AlertCircle } from "lucide-react";
+import { Mail, MessageCircle, Send, CheckCircle, AlertCircle } from "lucide-react";
 
 import { siteConfig } from "@/lib/siteConfig";
 import { faqs } from "@/data/mockData";
@@ -235,20 +235,8 @@ export function ContactClient() {
                         E-posta
                       </p>
                     </div>
-                    <p className="block text-sm text-codeweek-purple-300 italic">
-                      Yakında eklenecek...
-                    </p>
-                  </div>
-                  
-                  <div className="p-4 rounded-xl bg-codeweek-muted/20 border border-codeweek-purple-500/20">
-                    <div className="flex items-center gap-3 mb-2">
-                      <Phone className="w-4 h-4 text-codeweek-purple-400" />
-                      <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400">
-                        Telefon
-                      </p>
-                    </div>
-                    <p className="block text-sm text-codeweek-purple-300 italic">
-                      Yakında eklenecek...
+                    <p className="block text-sm text-codeweek-purple-300">
+                      {siteConfig.contact.email}
                     </p>
                   </div>
                 </div>
