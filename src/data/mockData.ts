@@ -78,6 +78,82 @@ export const scheduleDays = [
   },
 ];
 
+// Speaker slides data for the schedule page
+export const speakerSlides = [
+  {
+    id: 1,
+    speakerName: "İTÜ ATA Takımı",
+    speakerImage: "/itu_ata/itu_ata.jpeg",
+    speakerRole: "İstanbul Teknik Üniversitesi",
+    talkDate: "8 Aralık 2024",
+    talkTime: "13:40-14:20",
+    talkTopic: "İnsansız Hava Aracı Teknolojileri",
+    location: "Kemerburgaz Kampüsü - Konferans Salonu",
+    participants: "Kemerburgaz İlkokulu 3. ve 4. Sınıflar",
+    multipleSessions: [
+      {
+        time: "13:40-14:20",
+        location: "Kemerburgaz Kampüsü - Konferans Salonu",
+        participants: "Kemerburgaz İlkokulu 3. ve 4. Sınıflar"
+      },
+      {
+        time: "14:30-15:10",
+        location: "Kemerburgaz Kampüsü - Konferans Salonu",
+        participants: "Kemerburgaz Ortaokulu 5.-6.-7. ve 8. Sınıflar"
+      }
+    ]
+  },
+  {
+    id: 2,
+    speakerName: "Tümay Solak",
+    speakerImage: "/tumay_solak.jpeg",
+    speakerRole: "ENERJİSA Innovation Manager",
+    talkDate: "10 Aralık 2024",
+    talkTime: "12:50-13:30",
+    talkTopic: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi",
+    location: "Çamlıca Kampüsü - E-Hall",
+    participants: "Lise Hazırlık - 9.Sınıf"
+  },
+  {
+    id: 3,
+    speakerName: "İTÜ AUV Takımı",
+    speakerImage: "/itu_auv/itu_auv.png",
+    speakerRole: "İstanbul Teknik Üniversitesi",
+    talkDate: "12 Aralık 2024",
+    talkTime: "09:55-10:35",
+    talkTopic: "Otonom Sualtı Aracı Teknolojileri",
+    location: "Burçak Eyüboğlu Kampüsü - Oditoryum",
+    participants: "Burçak Eyüboğlu İlkokulu 3-4.Sınıflar ve Doğu Ataşehir İlkokulu 3-4.Sınıflar",
+    multipleSessions: [
+      {
+        time: "09:55-10:35",
+        location: "Burçak Eyüboğlu Kampüsü - Oditoryum",
+        participants: "Burçak Eyüboğlu İlkokulu 3-4.Sınıflar ve Doğu Ataşehir İlkokulu 3-4.Sınıflar"
+      },
+      {
+        time: "10:45-11:25",
+        location: "Burçak Eyüboğlu Kampüsü - Oditoryum",
+        participants: "Burçak Eyüboğlu Ortaokulu 5-6-7.sınıflar"
+      },
+      {
+        time: "12:50-13:30",
+        location: "Çamlıca Kampüsü - E-Hall",
+        participants: "Çamlıca İlkokulu 3-4.Sınıflar"
+      },
+      {
+        time: "13:40-14:20",
+        location: "Çamlıca Kampüsü - E-Hall",
+        participants: "Çamlıca Ortaokulu 5.-6.-7.sınıflar"
+      },
+      {
+        time: "14:30-15:10",
+        location: "Çamlıca Kampüsü - E-Hall",
+        participants: "Lise Hazırlık, 9.-10.Sınıflar"
+      }
+    ]
+  }
+];
+
 export const workshops = [
   {
     title: "Wizefloor ile Kodlama",

@@ -1,11 +1,23 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Calendar, Clock, MapPin } from "lucide-react";
-import { scheduleDays } from "@/data/mockData";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Calendar, Clock, MapPin, Mic, ChevronLeft, ChevronRight } from "lucide-react";
+import { scheduleDays, speakerSlides } from "@/data/mockData";
 import { EventCard } from "@/components/cards/event-card";
+import { SpeakerSlide } from "@/components/cards/speaker-slide";
 
 export default function SchedulePage() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  // Auto-play functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev === speakerSlides.length - 1 ? 0 : prev + 1));
+    }, 5000); // 5 seconds
+    
+    return () => clearInterval(interval);
+  }, [speakerSlides.length]);
   return (
     <div className="min-h-screen pt-24 pb-16">
       {/* Hero Section */}
@@ -33,6 +45,72 @@ export default function SchedulePage() {
             tüm etkinliklerin detaylı programı. Her gün için farklı temalar ve odak alanları.
           </p>
         </motion.div>
+      </section>
+
+      {/* Speaker Slides Section */}
+      <section className="mx-auto w-[min(1400px,95%)] mb-20">
+        {/* Carousel Container */}
+        <div className="relative">
+          <div className="overflow-hidden rounded-2xl">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentSlide}
+                initial={{ opacity: 0, x: 300 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -300 }}
+                transition={{ duration: 0.5 }}
+                className="w-full"
+              >
+                <SpeakerSlide
+                  speakerName={speakerSlides[currentSlide].speakerName}
+                  speakerImage={speakerSlides[currentSlide].speakerImage}
+                  speakerRole={speakerSlides[currentSlide].speakerRole}
+                  talkDate={speakerSlides[currentSlide].talkDate}
+                  talkTime={speakerSlides[currentSlide].talkTime}
+                  talkTopic={speakerSlides[currentSlide].talkTopic}
+                  location={speakerSlides[currentSlide].location}
+                  participants={speakerSlides[currentSlide].participants}
+                  multipleSessions={speakerSlides[currentSlide].multipleSessions}
+                />
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </div>
+        
+        {/* Navigation Buttons - Outside the slide container */}
+        <div className="flex justify-between items-center mt-6 relative">
+          <button
+            onClick={() => setCurrentSlide((prev) => (prev === 0 ? speakerSlides.length - 1 : prev - 1))}
+            className="w-12 h-12 rounded-full bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-white hover:scale-110 transition-transform shadow-lg"
+            aria-label="Previous slide"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          
+          {/* Slide Indicators */}
+          <div className="flex justify-center gap-2">
+            {speakerSlides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-3 h-3 rounded-full transition-all ${
+                  index === currentSlide
+                    ? "bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 w-8"
+                    : "bg-codeweek-purple-500/30 hover:bg-codeweek-purple-500/50"
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+          
+          <button
+            onClick={() => setCurrentSlide((prev) => (prev === speakerSlides.length - 1 ? 0 : prev + 1))}
+            className="w-12 h-12 rounded-full bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center text-white hover:scale-110 transition-transform shadow-lg"
+            aria-label="Next slide"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+        </div>
       </section>
 
       {/* Schedule Days */}
@@ -65,7 +143,7 @@ export default function SchedulePage() {
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {day.events.map((event, eventIndex) => (
                 <motion.div
-                  key={event.title}
+                  key={`${event.title}-${event.time}-${event.track}`}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
