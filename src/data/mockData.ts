@@ -82,6 +82,17 @@ export const scheduleDays = [
 export const speakerSlides = [
   {
     id: 1,
+    speakerName: "Tümay Solak",
+    speakerImage: "/tumay_solak.jpeg",
+    speakerRole: "ENERJİSA Innovation Manager",
+    talkDate: "10 Aralık 2024",
+    talkTime: "12:50-13:30",
+    talkTopic: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi",
+    location: "Çamlıca Kampüsü - E-Hall",
+    participants: "Lise Hazırlık - 9.Sınıf"
+  },
+  {
+    id: 2,
     speakerName: "İTÜ ATA Takımı",
     speakerImage: "/itu_ata/itu_ata.jpeg",
     speakerRole: "İstanbul Teknik Üniversitesi",
@@ -103,17 +114,7 @@ export const speakerSlides = [
       }
     ]
   },
-  {
-    id: 2,
-    speakerName: "Tümay Solak",
-    speakerImage: "/tumay_solak.jpeg",
-    speakerRole: "ENERJİSA Innovation Manager",
-    talkDate: "10 Aralık 2024",
-    talkTime: "12:50-13:30",
-    talkTopic: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi",
-    location: "Çamlıca Kampüsü - E-Hall",
-    participants: "Lise Hazırlık - 9.Sınıf"
-  },
+
   {
     id: 3,
     speakerName: "İTÜ AUV Takımı",
@@ -161,7 +162,7 @@ export const workshops = [
     capacity: "20 öğrenci",
     desc: "WizeFloor zemin etkileşim aracıyla eğlenceli ve hareketli bir şekilde kodlama mantığını deneyimleyin.",
     image: "/wizefloor.jpg",
-    fullDesc: "Öğrencilere önce WizeFloor’un kullanım şekli tanıtılır; ardından çocuklar zemin üzerindeki ok işaretlerine basarak temel yönleri dener. Sonrasında hedefe ulaşmayı amaçlayan “kodlama yolu” oyunu oynanır ve öğrenciler adımları doğru sırayla belirleyerek ilerler. Devamında ikili gruplar oluşturularak bir öğrencinin komut verdiği, diğerinin uyguladığı iş birliği etkinliği gerçekleştirilir ve etkinlik öğrencilerle yapılan kısa bir değerlendirme ile tamamlanır.",
+    fullDesc: "Öğrencilere önce WizeFloor'un kullanım şekli tanıtılır; ardından çocuklar zemin üzerindeki ok işaretlerine basarak temel yönleri dener. Sonrasında hedefe ulaşmayı amaçlayan \"kodlama yolu\" oyunu oynanır ve öğrenciler adımları doğru sırayla belirleyerek ilerler. Devamında ikili gruplar oluşturularak bir öğrencinin komut verdiği, diğerinin uyguladığı iş birliği etkinliği gerçekleştirilir ve etkinlik öğrencilerle yapılan kısa bir değerlendirme ile tamamlanır.",
     instructor: "Anaokulu Öğretmenleri",
     duration: "1 saat",
     prerequisites: "Yok",
@@ -282,7 +283,7 @@ export const workshops = [
     capacity: "20 öğrenci",
     desc: "Minecraft kodlama saati ile yapay zekayı 3 boyutlu hayvanlar tasarlamaya yönlendirin.",
     image: "/7_sinif_minecraft.png",
-    fullDesc: "MineCraft kodlama saati olan \"CyberSafe AI: Dig Deeper:Yapay zekayı 3 boyutlu yazdırılmış hayvanlar tasarlamaya yönlendirin, ancak dikkat edin: Yapay zeka hata yapar! Kütüphanede gerçek bilgiler arayın, sınıf arkadaşlarınızdan çeşitli fikirler toplayın ve herkesin mahremiyetini koruyun. Yapay zekayı olduğu gibi kabul etmeyin, daha derinlemesine araştırın!\" etkinliğini tamamlarlar. Sonrasında Tinkercad uygulamasında Creeper tasarımını yaparlar. Verilen görevleri tam anlamıyla yerine getiren öğrenciler sertifika ve 3D creeper almaya hak kazanır.",
+    fullDesc: "MineCraft kodlama saati olan \\\"CyberSafe AI: Dig Deeper:Yapay zekayı 3 boyutlu yazdırılmış hayvanlar tasarlamaya yönlendirin, ancak dikkat edin: Yapay zeka hata yapar! Kütüphanede gerçek bilgiler arayın, sınıf arkadaşlarınızdan çeşitli fikirler toplayın ve herkesin mahremiyetini koruyun. Yapay zekayı olduğu gibi kabul etmeyin, daha derinlemesine araştırın!\\\" etkinliğini tamamlarlar. Sonrasında Tinkercad uygulamasında Creeper tasarımını yaparlar. Verilen görevleri tam anlamıyla yerine getiren öğrenciler sertifika ve 3D creeper almaya hak kazanır.",
     instructor: "7. Sınıf Öğretmenleri",
     duration: "2.5 saat",
     prerequisites: "Temel Minecraft bilgisi",
@@ -366,6 +367,18 @@ export const hackathon = {
 
 export const speakers = [
   {
+    name: "Tümay Solak",
+    role: "ENERJİSA Innovation Manager",
+    topic: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi",
+    bio: "Tümay Solak, Enerjisa'da Yapay Zekâ ve startup iş birliklerine odaklanan bir İnovasyon Yöneticisidir. World Business Angels Investment Forum'unda Senatör olarak görev yapmakta ve startup'lara mentorluk etmektedir. Paylaşımlarında inovasyon stratejileri, Türkiye'de yapay zekâ benimsenmesi ve girişimcilikte iş birliğinin önemi öne çıkmaktadır. Türk startup ekosistemi, yatırım trendleri ve kurumsal girişimcilik üzerine içgörüler paylaşarak sürdürülebilir ve müşteri odaklı inovasyonu vurgulamaktadır.",
+    image: "/tumay_solak.jpeg",
+    experience: "10+ yıl inovasyon ve teknoloji yönetimi, enerji sektöründe 8+ yıl dijital dönüşüm deneyimi, 50+ startup değerlendirme ve yatırım süreci yönetimi",
+    achievements: "Selekt AI platformunun geliştirilmesi ve ticarileştirilmesi, 3 inovasyon ödülü, 4 uluslararası konferansta konuşmacı, MIT Technology Review'da yer alma",
+    session: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi",
+    sessionTime: "10 Aralık, 12:50-13:30",
+    sessionLocation: "Çamlıca Kampüsü - E-Hall"
+  },
+  {
     name: "İTÜ ATA Takımı",
     role: "İstanbul Teknik Üniversitesi",
     topic: "İnsansız Hava Aracı Teknolojileri",
@@ -381,25 +394,13 @@ export const speakers = [
     name: "İTÜ AUV Takımı",
     role: "İstanbul Teknik Üniversitesi",
     topic: "Otonom Sualtı Aracı Teknolojileri",
-    bio: "İTÜ AUV Takımı, 2018 yılında İTÜ Gemi İnşaatı ve Deniz Bilimleri Fakültesi bünyesinde, su altı robotiği alanındaki deneyimi otonom sistemlerle birleştirmek amacıyla kurulmuştur. Takım, deniz teknolojileri ve otonom su altı araçları (AUV) üzerine yenilikçi çalışmalar yürütmektedir. Ulusal ve uluslararası birçok yarışmada Türkiye’yi başarıyla temsil eden İTÜ AUV, mühendislik bilgisini gerçek dünya problemlerine uygulayarak özgün ve yüksek teknolojili su altı araçları geliştirmeye devam etmektedir.",
+    bio: "İTÜ AUV Takımı, 2018 yılında İTÜ Gemi İnşaatı ve Deniz Bilimleri Fakültesi bünyesinde, su altı robotiği alanındaki deneyimi otonom sistemlerle birleştirmek amacıyla kurulmuştur. Takım, deniz teknolojileri ve otonom su altı araçları (AUV) üzerine yenilikçi çalışmalar yürütmektedir. Ulusal ve uluslararası birçok yarışmada Türkiye'yi başarıyla temsil eden İTÜ AUV, mühendislik bilgisini gerçek dünya problemlerine uygulayarak özgün ve yüksek teknolojili su altı araçları geliştirmeye devam etmektedir.",
     image: "/itu_auv/itu_auv.png",
     experience: "7+ yıl otonom sualtı aracı geliştirme, 5+ farklı deniz ortamında test ve uygulama, 3 farklı AUV prototipi geliştirme",
     achievements: "RoboSub AUV yarışmasında dünyada ilk 10'a girme, SAUV-Europe yarışmasında en iyi tasarım ödülü, 4 uluslararası makale yayını, 2 teknoloji transferi projesi tamamlama",
     session: "Otonom Sualtı Aracı",
     sessionTime: "Burçak Eyüboğlu Kampüsü 12 Aralık 09:55-10:35, Burçak Eyüboğlu Kampüsü 12 Aralık 10:45-11:25, Çamlıca Eyüboğlu Kampüsü 12 Aralık 12:50-13:30, Çamlıca Eyüboğlu Kampüsü 12 Aralık 13:40-14:20, Çamlıca Eyüboğlu Kampüsü 12 Aralık 14:30-15:10",
     sessionLocation: "Burçak Eyüboğlu Kampüsü - Oditoryum, Çamlıca Eyüboğlu Kampüsü - E-Hall"
-  },
-  {
-    name: "Tümay Solak",
-    role: "ENERJİSA Innovation Manager",
-    topic: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi",
-    bio: "Tümay Solak, Enerjisa’da Yapay Zekâ ve startup iş birliklerine odaklanan bir İnovasyon Yöneticisidir. World Business Angels Investment Forum’da Senatör olarak görev yapmakta ve startup’lara mentorluk etmektedir. Paylaşımlarında inovasyon stratejileri, Türkiye’de yapay zekâ benimsenmesi ve girişimcilikte iş birliğinin önemi öne çıkmaktadır. Türk startup ekosistemi, yatırım trendleri ve kurumsal girişimcilik üzerine içgörüler paylaşarak sürdürülebilir ve müşteri odaklı inovasyonu vurgulamaktadır.",
-    image: "/tumay_solak.jpeg",
-    experience: "10+ yıl inovasyon ve teknoloji yönetimi, enerji sektöründe 8+ yıl dijital dönüşüm deneyimi, 50+ startup değerlendirme ve yatırım süreci yönetimi",
-    achievements: "Selekt AI platformunun geliştirilmesi ve ticarileştirilmesi, 3 inovasyon ödülü, 4 uluslararası konferansta konuşmacı, MIT Technology Review'da yer alma",
-    session: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi",
-    sessionTime: "10 Aralık, 12:50-13:30",
-    sessionLocation: "Çamlıca Kampüsü - E-Hall"
   }
 ];
 
@@ -441,4 +442,3 @@ export const faqs = [
     answer: "Evet, tüm AI atölyelerine katılanlara dijital AI katılım sertifikası verilir. AI ethics ve responsible AI modüllerini tamamlayanlara özel sertifika sunulur.",
   },
 ];
-
