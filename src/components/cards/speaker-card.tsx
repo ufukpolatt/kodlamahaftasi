@@ -116,6 +116,21 @@ export function SpeakerCard({
         </DialogHeader>
 
         <div className="space-y-8 py-6">
+          {/* Hakkında Bölümü */}
+          <div className="ai-card rounded-xl p-6">
+            <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400 mb-4">
+              Hakkında
+            </p>
+            <div className="space-y-4">
+              {bio && (
+                <div>
+                  <p className="text-sm text-codeweek-purple-200 leading-relaxed">{bio}</p>
+                </div>
+              )}
+              
+            </div>
+          </div>
+
           <div className="grid gap-6 md:grid-cols-2">
             {session && (
               <div className="ai-card rounded-xl p-4">
@@ -133,7 +148,13 @@ export function SpeakerCard({
                     Tarih & Saat
                   </p>
                 </div>
-                <p className="text-sm font-medium text-white">{sessionTime}</p>
+                <div className="text-sm font-medium text-white">
+                  {sessionTime.split(',').map((time, index) => (
+                    <div key={index} className="mb-1">
+                      {time.trim()}
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
             {sessionLocation && (
@@ -144,7 +165,13 @@ export function SpeakerCard({
                     Konum
                   </p>
                 </div>
-                <p className="text-sm font-medium text-white">{sessionLocation}</p>
+                <div className="text-sm font-medium text-white">
+                  {sessionLocation.split(',').map((location, index) => (
+                    <div key={index} className="mb-1">
+                      {location.trim()}
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>

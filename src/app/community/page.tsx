@@ -67,7 +67,9 @@ export default function CommunityPage() {
               </div>
               
               <p className="text-base text-codeweek-purple-200 leading-relaxed mb-6">
-                Siz değerli velilerimiz ve öğrencilerimiz ile;
+                Eyüboğlu Okulları olarak Aralık ayında tüm kampüslerimizde eğlenceli ve öğretici kodlama etkinlikleri düzenliyoruz! <br /> <br />
+                8–12 Aralık tarihleri arasında Burçak Eyüboğlu, Çamlıca Eyüboğlu, Kemerburgaz Eyüboğlu ve Doğu Ataşehir Eyüboğlu kampüslerimizde gerçekleşecek bu özel aile - öğrenci atölye buluşmalarımızda; velilerimiz ve öğrencilerimiz birlikte kodlamanın keyfini yaşayacak, algoritma mantığını oyunlarla keşfedecek ve yapay zekâyı basit deneyimler ile tanıyacaklardır. <br /> <br />
+                Hep birlikte öğrenmeyi güçlendireceğimiz bu etkinliklerde, hem eğlenecek hem de geleceğin teknolojilerine adım atacağız. Sizi de bu keyifli yolculuğa davet ediyoruz! <br /> <br />
               </p>
               
               <div className="space-y-3 mb-6">
@@ -130,9 +132,17 @@ export default function CommunityPage() {
               </div>
               
               <p className="text-base text-codeweek-purple-200 leading-relaxed mb-6">
-                Evde kendi hızınızda tamamlayabileceğiniz teknoloji etkinlikleri ile
-                çocuklarınızın dijital yetkinliklerini geliştirin. Bu etkinlikler
-                herhangi bir zamanda yapabilirsiniz.
+                Kodlama Haftası'na Hoş Geldiniz! <br /> 
+      
+                Ailelerin çocuklarıyla birlikte hem eğlenip hem de öğrenebileceği özel bir içerik hazırladık. Kodlama Haftası boyunca, teknolojiyi keşfetmeyi keyifli ve ulaşılabilir hâle getiren birbirinden eğlenceli etkinliklerle sizleri buluşturuyoruz. <br /> <br />
+                
+                Bu hafta boyunca her gün, çocukların dijital dünyayı daha iyi anlamasına yardımcı olacak farklı bir etkinlik önerisi sunuyoruz. Etkinlikler; problem çözme, yaratıcılık, mantıksal düşünme ve iş birliği gibi önemli becerileri destekleyecek şekilde tasarlanmıştır. Aynı zamanda ailelerin öğrenme yolculuğuna aktif olarak katılması, çocukların motivasyonunu güçlendirmeyi ve birlikte kaliteli zaman geçirmeyi amaçlamaktadır. <br /> <br />
+                
+                Çocuklarınızla birlikte kod yazarken, dijital araçları keşfederken ve mini projeler oluştururken hem eğlenecek hem de yeni deneyimler edineceksiniz. Bu süreçte yalnızca teknolojiyi değil, birlikte üretmenin verdiği mutluluğu da keşfedeceksiniz. <br /> <br />
+                
+                Tüm etkinliklerimiz Classroom üzerinden paylaşılmıştır. Aile katılımını teşvik eden bu içeriklere dilediğiniz zaman ulaşabilir, etkinlikleri evinizde kolaylıkla uygulayabilirsiniz. <br /> <br />
+                
+                Hazırsanız, teknoloji ve yaratıcılıkla dolu bu özel haftaya birlikte adım atalım!
               </p>
               
               <div className="space-y-4 mb-6">
