@@ -35,24 +35,26 @@ export const scheduleDays = [
       { title: "Teknolojiyle İlham Veren Projeler - Öğrenci Proje Paylaşımı", time: "12:50-13:30", track: "Çamlıca Kampüsü - E-Hall", speaker: "Lise Hazırlık - 9.Sınıf" },
       { title: "İTÜ ATA Takımı - İnsansız Hava Aracı", time: "13:40-14:20", track: "Kemerburgaz Kampüsü - Konferans Salonu", speaker: "Kemerburgaz İlkokulu 3. ve 4. Sınıflar" },
       { title: "İTÜ ATA Takımı - İnsansız Hava Aracı", time: "14:30-15:10", track: "Kemerburgaz Kampüsü - Konferans Salonu", speaker: "Kemerburgaz Ortaokulu 5.-6.-7. ve 8. Sınıflar" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: "Hanoi Kuleleri – Algoritma ve Problem Çözme, Teachable Machine – Makine Öğrenmesi Deneyi, Code.org Dans Partisi – Blok Kodlama Eğlencesi" },
+      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
     ],
   },
   {
     day: "Salı",
     date: "9 Aralık",
     events: [
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "DOĞU ATAŞEHİR EYÜBOĞLU", speaker: "Hanoi Kuleleri – Algoritma ve Problem Çözme, Teachable Machine – Makine Öğrenmesi Deneyi, Code.org Dans Partisi – Blok Kodlama Eğlencesi" },
+      { title: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları", time: "10:45-11:25", track: "Online Konuk Konuşması", speaker: "Konuşmacı: Muratcan Karagöz - SUN TEKSTİL ARGE Uzmanı", participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar\nBurçak Eyüboğlu Ortaokulu 6. Sınıflar\nKemerburgaz Ortaokulu 5.6. ve 7.Sınıflar" },
+      { title: "MIT xPRO'da Data Science & Big Data Analytics", time: "10:45-11:25", track: "Eyüboğlu Hall", speaker: "Konuşmacı: Seza Dursun - BOYNER Principal Data Science Product Owner", participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar\nBurçak Eyüboğlu Ortaokulu 6. Sınıflar\nKemerburgaz Ortaokulu 5.6. ve 7.Sınıflar" },
+      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "DOĞU ATAŞEHİR EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
     ],
   },
   {
     day: "Çarşamba",
     date: "10 Aralık",
     events: [
-      { title: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi", time: "12:50-13:30", track: "Çamlıca Kampüsü - E-Hall", speaker: "Konuşmacı: Tümay Solak - ENERJİSA Innovation Manager | Katılımcılar: Lise Hazırlık - 9.Sınıf" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: "Hanoi Kuleleri – Algoritma ve Problem Çözme, Teachable Machine – Makine Öğrenmesi Deneyi, Code.org Dans Partisi – Blok Kodlama Eğlencesi" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: "Hanoi Kuleleri – Algoritma ve Problem Çözme, Teachable Machine – Makine Öğrenmesi Deneyi, Code.org Dans Partisi – Blok Kodlama Eğlencesi" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "KEMERBURGAZ EYÜBOĞLU", speaker: "Hanoi Kuleleri – Algoritma ve Problem Çözme, Teachable Machine – Makine Öğrenmesi Deneyi, Code.org Dans Partisi – Blok Kodlama Eğlencesi" },
+      { title: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi", time: "12:50-13:30", track: "Çamlıca Kampüsü - E-Hall", speaker: "Konuşmacı: Tümay Solak - ENERJİSA Innovation Manager", participants: " Lise Hazırlık - 9.Sınıf" },
+      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
+      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
+      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "KEMERBURGAZ EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
     ],
   },
   {
@@ -60,9 +62,9 @@ export const scheduleDays = [
     date: "11 Aralık",
     events: [
       { title: "Teknolojiyle İlham Veren Projeler - Öğrenci Proje Paylaşımı", time: "10:45-11:25", track: "Çamlıca Kampüsü - E-Hall", speaker: "6.ve 7.Sınıflar" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: "Hanoi Kuleleri – Algoritma ve Problem Çözme, Teachable Machine – Makine Öğrenmesi Deneyi, Code.org Dans Partisi – Blok Kodlama Eğlencesi" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "DOĞU ATAŞEHİR EYÜBOĞLU", speaker: "Hanoi Kuleleri – Algoritma ve Problem Çözme, Teachable Machine – Makine Öğrenmesi Deneyi, Code.org Dans Partisi – Blok Kodlama Eğlencesi" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "KEMERBURGAZ EYÜBOĞLU", speaker: "Hanoi Kuleleri – Algoritma ve Problem Çözme, Teachable Machine – Makine Öğrenmesi Deneyi, Code.org Dans Partisi – Blok Kodlama Eğlencesi" },
+      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
+      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "DOĞU ATAŞEHİR EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
+      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "KEMERBURGAZ EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
     ],
   },
   {
@@ -92,6 +94,28 @@ export const speakerSlides = [
     participants: "Lise Hazırlık - 9.Sınıf"
   },
   {
+    id: 4,
+    speakerName: "Muratcan Karagöz",
+    speakerImage: "/muratcan_karagoz.jpg",
+    speakerRole: "SUN TEKSTİL- ARGE Uzmanı",
+    talkDate: "9 Aralık 2024",
+    talkTime: "10:45-11:25",
+    talkTopic: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları",
+    location: "Online Konuk Konuşması",
+    participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar, Burçak Eyüboğlu Ortaokulu 6. Sınıflar, Kemerburgaz Ortaokulu 5.6. ve 7.Sınıflar"
+  },
+  {
+    id: 5,
+    speakerName: "Seza Dursun",
+    speakerImage: "/seza_dursun.jpeg",
+    speakerRole: "BOYNER- Principal Data Science Product Owner",
+    talkDate: "9 Aralık 2024",
+    talkTime: "10:45-11:25",
+    talkTopic: "MIT xPRO'da Data Science & Big Data Analytics",
+    location: "Eyüboğlu Hall",
+    participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar, Burçak Eyüboğlu Ortaokulu 6. Sınıflar, Kemerburgaz Ortaokulu 5.6. ve 7.Sınıflar"
+  },
+  {
     id: 2,
     speakerName: "İTÜ ATA Takımı",
     speakerImage: "/itu_ata/itu_ata.jpeg",
@@ -114,7 +138,6 @@ export const speakerSlides = [
       }
     ]
   },
-
   {
     id: 3,
     speakerName: "İTÜ AUV Takımı",
@@ -379,6 +402,31 @@ export const speakers = [
     sessionLocation: "Çamlıca Kampüsü - E-Hall"
   },
   {
+    name: "Muratcan Karagöz",
+    role: "SUN TEKSTİL- ARGE Uzmanı",
+    topic: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları",
+    bio: "Sun Tekstil Ar-Ge Merkezi’nde inovasyon çalışmaları yürütmektedir. Yapay zekâ destekli dijital tasarım ve 3D modelleme uygulamalarıyla, fiziksel prototipe ihtiyaç duymadan hızlı ve yenilikçi moda tasarımlarının geliştirilmesine katkı sağlayan bir çözüm sürecinin iyileştirilmesine yönelik çalışmalar gerçekleştirmektedir.",
+    image: "/muratcan_karagoz.jpg",
+    experience: "",
+    achievements: "",
+    session: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları",
+    sessionTime: "9 Aralık 10:45-11:25",
+    sessionLocation: "Online Konuk Konuşması"
+  },
+  
+  {
+    name: "Seza Dursun",
+    role: "BOYNER- Principal Data Science Product Owner",
+    topic: "MIT xPRO’da Data Science & Big Data Analytics ",
+    bio: "Seza Dursun, yapay zekâ ve veri bilimi alanında uzman bir isimdir. Boyner’de Data Science Product Owner olarak görev yapmakta ve aynı zamanda Yeditepe Üniversitesi’nde yapay zekâ ve veri bilimi dersleri vermektedir. MIT xPRO’da Data Science & Big Data Analytics eğitimini tamamlayan Dursun, büyük veri, makine öğrenimi ve yapay zekâ projelerinde aktif rol almaktadır.",
+    image: "/seza_dursun.jpeg",
+    experience: "",
+    achievements: "",
+    session: "MIT xPRO'da Data Science & Big Data Analytics",
+    sessionTime: "9 Aralık 10:45-11:25",
+    sessionLocation: "Eyüboğlu Hall"
+  },
+  {
     name: "İTÜ ATA Takımı",
     role: "İstanbul Teknik Üniversitesi",
     topic: "İnsansız Hava Aracı Teknolojileri",
@@ -390,6 +438,7 @@ export const speakers = [
     sessionTime: "Kemerburgaz Eyüboğlu Kampüsü 8 Aralık 13:40-14:20, Kemerbugaz Eyüboğlu Kampüsü 8 Aralık 14:30-15:10",
     sessionLocation: "Kemerburgaz Kampüsü - Konferans Salonu"
   },
+  
   {
     name: "İTÜ AUV Takımı",
     role: "İstanbul Teknik Üniversitesi",

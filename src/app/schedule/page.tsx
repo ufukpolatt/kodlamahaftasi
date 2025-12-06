@@ -154,6 +154,7 @@ export default function SchedulePage() {
                     time={event.time}
                     track={event.track}
                     speaker={event.speaker}
+                    participants={event.participants}
                   />
                 </motion.div>
               ))}

@@ -195,7 +195,7 @@ export function SpeakerSlide({
         
         {/* Right Image Section */}
         <div className="w-full md:w-1/2 p-6 md:p-8 flex items-center justify-center bg-gradient-to-br from-codeweek-purple-600/5 to-codeweek-pink-600/5">
-          {speakerName === "Tümay Solak" ? (
+          {speakerImage ? (
             <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 p-0.5">
               <img
                 src={speakerImage}
@@ -203,14 +203,8 @@ export function SpeakerSlide({
                 className="w-full h-full rounded-full object-cover"
               />
             </div>
-          ) : speakerImage ? (
-            <img
-              src={speakerImage}
-              alt={speakerName}
-              className="w-full h-full object-cover rounded-xl"
-            />
           ) : (
-            <div className="w-full h-full rounded-xl bg-codeweek-dark flex items-center justify-center">
+            <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-codeweek-dark flex items-center justify-center">
               <UserRound className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 text-codeweek-purple-300" />
             </div>
           )}

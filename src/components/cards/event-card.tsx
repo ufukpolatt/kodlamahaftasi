@@ -8,9 +8,10 @@ type EventCardProps = {
   time: string;
   track: string;
   speaker?: string;
+  participants?: string;
 };
 
-export function EventCard({ title, time, track, speaker }: EventCardProps) {
+export function EventCard({ title, time, track, speaker, participants }: EventCardProps) {
   return (
     <motion.div
       whileHover={{ x: 5, scale: 1.02 }}
@@ -48,6 +49,18 @@ export function EventCard({ title, time, track, speaker }: EventCardProps) {
         <p className="text-xs text-codeweek-purple-300 mb-2 relative z-10">
           {speaker.startsWith("Konuşmacı:") ? speaker : `Katılımcılar: ${speaker}`}
         </p>
+      )}
+      
+      {/* Participants displayed vertically */}
+      {participants && participants.trim() !== "" && (
+        <div className="text-xs text-codeweek-purple-300 mb-2 relative z-10">
+          <span className="font-semibold">Katılımcılar:</span>
+          <div className="mt-1 space-y-1">
+            {participants.split('\n').map((participant, index) => (
+              <div key={index} className="ml-2">• {participant}</div>
+            ))}
+          </div>
+        </div>
       )}
       
       {/* AI Badge */}
