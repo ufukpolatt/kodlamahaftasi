@@ -194,18 +194,18 @@ export function SpeakerSlide({
         </div>
         
         {/* Right Image Section */}
-        <div className="w-full md:w-1/2 p-6 md:p-8 flex items-center justify-center bg-gradient-to-br from-codeweek-purple-600/5 to-codeweek-pink-600/5">
+        <div className={`w-full md:w-1/2 ${speakerName.includes('İTÜ') ? 'p-0' : 'p-6 md:p-8'} flex items-center justify-center bg-gradient-to-br from-codeweek-purple-600/5 to-codeweek-pink-600/5`}>
           {speakerImage ? (
-            <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 p-0.5">
+            <div className={`${speakerName.includes('İTÜ') ? 'w-full h-full' : 'w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96'} ${speakerName.includes('İTÜ') ? 'rounded-none' : 'rounded-full'} ${speakerName.includes('İTÜ') ? '' : 'bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 p-0.5'}`}>
               <img
                 src={speakerImage}
                 alt={speakerName}
-                className="w-full h-full rounded-full object-cover"
+                className={`w-full h-full ${speakerName.includes('İTÜ') ? 'rounded-none object-cover' : 'rounded-full object-cover'}`}
               />
             </div>
           ) : (
-            <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-codeweek-dark flex items-center justify-center">
-              <UserRound className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 text-codeweek-purple-300" />
+            <div className={`${speakerName.includes('İTÜ') ? 'w-full h-full' : 'w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96'} ${speakerName.includes('İTÜ') ? 'rounded-none' : 'rounded-full'} ${speakerName.includes('İTÜ') ? '' : 'bg-codeweek-dark'} flex items-center justify-center`}>
+              <UserRound className={`${speakerName.includes('İTÜ') ? 'w-24 h-24 md:w-32 h-32' : 'w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48'} text-codeweek-purple-300`} />
             </div>
           )}
         </div>

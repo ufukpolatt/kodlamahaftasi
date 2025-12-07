@@ -99,8 +99,7 @@ export default function CompetitionsPage() {
           </h1>
           
           <p className="text-xl text-codeweek-purple-200 max-w-3xl mx-auto leading-relaxed">
-            Yarışma ve maratonlarda katılım sağlayarak, inovasyonun sınırlarını zorlayın ve
-            toplumsal fayda sağlayan projeler geliştirin.
+            Yarışmalara & maratonlara katılarak yaratıcılığınızı ortaya koyun, eğlenceli görevlerle problem çözme becerilerinizi geliştirin.
           </p>
         </motion.div>
       </section>

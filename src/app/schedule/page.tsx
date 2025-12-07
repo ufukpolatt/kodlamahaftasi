@@ -41,8 +41,7 @@ export default function SchedulePage() {
           </h1>
           
           <p className="text-xl text-codeweek-purple-200 max-w-3xl mx-auto leading-relaxed">
-            8-12 Aralık tarihleri arasında Eyüboğlu Eğitim Kurumları'nda gerçekleşecek
-            tüm etkinliklerin detaylı programı. Her gün için farklı temalar ve odak alanları.
+            8–12 Aralık tarihleri arasında Eyüboğlu Eğitim Kurumları'nda gerçekleşecek Kodlama Haftası'nın günlük etkinlik programını bu sayfada bulabilirsiniz.
           </p>
         </motion.div>
       </section>

@@ -132,17 +132,17 @@ export default function CommunityPage() {
               </div>
               
               <p className="text-base text-codeweek-purple-200 leading-relaxed mb-6">
-                Kodlama Haftası'na Hoş Geldiniz! <br /> 
-      
-                Ailelerin çocuklarıyla birlikte hem eğlenip hem de öğrenebileceği özel bir içerik hazırladık. Kodlama Haftası boyunca, teknolojiyi keşfetmeyi keyifli ve ulaşılabilir hâle getiren birbirinden eğlenceli etkinliklerle sizleri buluşturuyoruz. <br /> <br />
+                Kodlama Haftası'na Hoş Geldiniz!<br /><br />
                 
-                Bu hafta boyunca her gün, çocukların dijital dünyayı daha iyi anlamasına yardımcı olacak farklı bir etkinlik önerisi sunuyoruz. Etkinlikler; problem çözme, yaratıcılık, mantıksal düşünme ve iş birliği gibi önemli becerileri destekleyecek şekilde tasarlanmıştır. Aynı zamanda ailelerin öğrenme yolculuğuna aktif olarak katılması, çocukların motivasyonunu güçlendirmeyi ve birlikte kaliteli zaman geçirmeyi amaçlamaktadır. <br /> <br />
+                Ailelerin çocuklarıyla birlikte hem eğlenip hem öğrenebileceği özel bir içerik hazırladık. Hafta boyunca teknolojiyi keşfetmeyi keyifli ve ulaşılabilir kılan çeşitli etkinliklerle sizleri buluşturuyoruz.<br /><br />
                 
-                Çocuklarınızla birlikte kod yazarken, dijital araçları keşfederken ve mini projeler oluştururken hem eğlenecek hem de yeni deneyimler edineceksiniz. Bu süreçte yalnızca teknolojiyi değil, birlikte üretmenin verdiği mutluluğu da keşfedeceksiniz. <br /> <br />
+                Her gün, çocukların dijital dünyayı daha iyi anlamasına yardımcı olacak bir etkinlik önerisi sunuyoruz. Bu etkinlikler; problem çözme, yaratıcılık, mantıksal düşünme ve iş birliği gibi becerileri desteklerken ailelerin sürece aktif katılımını teşvik eder.<br /><br />
                 
-                Tüm etkinliklerimiz Classroom üzerinden paylaşılmıştır. Aile katılımını teşvik eden bu içeriklere dilediğiniz zaman ulaşabilir, etkinlikleri evinizde kolaylıkla uygulayabilirsiniz. <br /> <br />
+                Çocuklarınızla kod yazarken, dijital araçları keşfederken veya mini projeler oluştururken hem yeni deneyimler kazanacak hem de birlikte kaliteli zaman geçireceksiniz.<br /><br />
                 
-                Hazırsanız, teknoloji ve yaratıcılıkla dolu bu özel haftaya birlikte adım atalım!
+                Tüm etkinlikler Classroom üzerinden paylaşılmıştır. Dilediğiniz zaman erişebilir, evinizde kolayca uygulayabilirsiniz.<br /><br />
+                
+                Hazırsanız, teknoloji ve yaratıcılıkla dolu bu özel haftaya başlayalım!
               </p>
               
               <div className="space-y-4 mb-6">

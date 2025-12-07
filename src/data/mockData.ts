@@ -32,7 +32,6 @@ export const scheduleDays = [
     day: "Pazartesi",
     date: "8 Aralık",
     events: [
-      { title: "Teknolojiyle İlham Veren Projeler - Öğrenci Proje Paylaşımı", time: "12:50-13:30", track: "Çamlıca Kampüsü - E-Hall", speaker: "Lise Hazırlık - 9.Sınıf" },
       { title: "İTÜ ATA Takımı - İnsansız Hava Aracı", time: "13:40-14:20", track: "Kemerburgaz Kampüsü - Konferans Salonu", speaker: "Kemerburgaz İlkokulu 3. ve 4. Sınıflar" },
       { title: "İTÜ ATA Takımı - İnsansız Hava Aracı", time: "14:30-15:10", track: "Kemerburgaz Kampüsü - Konferans Salonu", speaker: "Kemerburgaz Ortaokulu 5.-6.-7. ve 8. Sınıflar" },
       { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
@@ -43,7 +42,7 @@ export const scheduleDays = [
     date: "9 Aralık",
     events: [
       { title: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları", time: "10:45-11:25", track: "Online Konuk Konuşması", speaker: "Konuşmacı: Muratcan Karagöz - SUN TEKSTİL ARGE Uzmanı", participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar\nBurçak Eyüboğlu Ortaokulu 6. Sınıflar\nKemerburgaz Ortaokulu 5.6. ve 7.Sınıflar" },
-      { title: "MIT xPRO'da Data Science & Big Data Analytics", time: "10:45-11:25", track: "Eyüboğlu Hall", speaker: "Konuşmacı: Seza Dursun - BOYNER Principal Data Science Product Owner", participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar\nBurçak Eyüboğlu Ortaokulu 6. Sınıflar\nKemerburgaz Ortaokulu 5.6. ve 7.Sınıflar" },
+      { title: "MIT xPRO'da Data Science & Big Data Analytics", time: "10:45-11:25", track: "Eyüboğlu Hall", speaker: "Konuşmacı: Seza Dursun - BOYNER Principal Data Science Product Owner", participants: "Çamlıca Ortaokulu 8.Sınıflar \n Eyüboğlu Koleji Burçak Eyüboğlu Fen veTeknoloji Lisesi 11.Sınıflar" },
       { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "DOĞU ATAŞEHİR EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
     ],
   },
@@ -51,7 +50,8 @@ export const scheduleDays = [
     day: "Çarşamba",
     date: "10 Aralık",
     events: [
-      { title: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi", time: "12:50-13:30", track: "Çamlıca Kampüsü - E-Hall", speaker: "Konuşmacı: Tümay Solak - ENERJİSA Innovation Manager", participants: " Lise Hazırlık - 9.Sınıf" },
+      { title: "Teknolojiyle İlham Veren Projeler - Öğrenci Proje Paylaşımı", time: "12:10-12:45", track: "Çamlıca Kampüsü - E-Hall", speaker: "Lise Hazırlık - 9.Sınıf" },
+      { title: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi", time: "12:50-13:30", track: "Çamlıca Kampüsü - E-Hall", speaker: "Konuşmacı: Tümay Solak - ENERJİSA Innovation Manager", participants: " Lise Hazırlık - 9. ve 10.Sınıflar" },
       { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
       { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
       { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "KEMERBURGAZ EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
@@ -250,7 +250,7 @@ export const workshops = [
     level: "İlkokul",
     capacity: "20 öğrenci",
     desc: "3D kalem kullanarak kişisel zaman kapsülü tasarlayarak geleceğe mesajlar gönderin.",
-    image: "/",
+    image: "/3d_kalem.png",
     fullDesc: "Öğrencilerimiz bu atölyede 3D kalem kullanarak küçük bir Mini Zaman Kapsülü tasarlayacaklardır. Çalışmanın içine öğrencinin bugünkü duygusunu, küçük bir hedefini ve gelecekte kendine ya da ailesine iletmek istediği minik bir mesajını içeren bir not yerleştirilecektir. Etkinliğin sonunda kapsüller kilitli poşetlerinde öğrencilere teslim edilerek evde aileleriyle birlikte açmaları ve paylaşmaları sağlanacaktır.",
     instructor: "2. Sınıf Öğretmenleri",
     duration: "1.5 saat",

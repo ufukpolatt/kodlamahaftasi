@@ -27,8 +27,7 @@ export default function SpeakersPage() {
           </h1>
           
           <p className="text-xl text-codeweek-purple-200 max-w-3xl mx-auto leading-relaxed">
-            8-12 Aralık tarihleri arasında Eyüboğlu Eğitim Kurumları'nda ağırlayacak 
-            global ve yerel  uzmanlarıyla tanışın, bilgi ve deneyim paylaşın.
+            8–12 Aralık tarihlerinde bizimle olacak uzman konuşmacıları buradan inceleyebilirsiniz.
           </p>
         </motion.div>
       </section>
