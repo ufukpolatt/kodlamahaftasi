@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
 import { siteConfig } from "@/lib/siteConfig";
-import { faqs } from "@/data/mockData";
 import { ContactClient } from "./contact-client";
 
 export const metadata: Metadata = {
-  title: "İletişim & SSS",
+  title: "İletişim",
   description: "AI ve teknoloji odaklı KodlamaHaftası iletişim sayfası.",
 };
 

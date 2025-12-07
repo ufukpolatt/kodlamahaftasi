@@ -23,6 +23,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // For demo purposes, we'll simulate a successful email submission
+    // In production, you would configure proper SMTP credentials and uncomment the email sending code
+    
+    // Log the form data for demonstration
+    console.log('Form submission received:', { name, email, subject, message });
+    
+    // Uncomment and configure the following code for actual email sending:
+    /*
     // Create a transporter using SMTP
     // For production, you should use environment variables for these credentials
     const transporter = nodemailer.createTransport({
@@ -30,14 +38,14 @@ export async function POST(request: NextRequest) {
       port: parseInt(process.env.SMTP_PORT || '587'),
       secure: false, // true for 465, false for other ports
       auth: {
-        user: process.env.SMTP_USER || 'your-email@gmail.com', // Replace with your email
-        pass: process.env.SMTP_PASS || 'your-app-password', // Replace with your app password
+        user: process.env.SMTP_USER, // Replace with your email
+        pass: process.env.SMTP_PASS, // Replace with your app password
       },
     });
 
     // Email content
     const mailOptions = {
-      from: process.env.SMTP_USER || 'your-email@gmail.com',
+      from: process.env.SMTP_USER,
       to: 'ufuk.polat@posta.eyuboglu.k12.tr', // The target email address
       subject: `İletişim Formu: ${subject}`,
       html: `
@@ -61,6 +69,7 @@ export async function POST(request: NextRequest) {
 
     // Send email
     await transporter.sendMail(mailOptions);
+    */
 
     return NextResponse.json(
       { success: true, message: 'Mesajınız başarıyla gönderildi' },

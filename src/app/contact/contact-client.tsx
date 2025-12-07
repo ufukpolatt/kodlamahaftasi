@@ -5,11 +5,9 @@ import { motion } from "framer-motion";
 import { Mail, MessageCircle, Send, CheckCircle, AlertCircle } from "lucide-react";
 
 import { siteConfig } from "@/lib/siteConfig";
-import { faqs } from "@/data/mockData";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { FAQAccordion } from "@/components/faq-accordion";
 
 export function ContactClient() {
   const [formData, setFormData] = useState({
@@ -209,72 +207,43 @@ export function ContactClient() {
             </div>
           </motion.div>
           
-          {/* Contact Info & FAQ */}
-          <div className="space-y-6">
-            {/* Contact Information */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="ai-card rounded-3xl p-6 neural-bg relative overflow-hidden"
-            >
-              <div className="relative z-10">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center">
-                    <Mail className="w-5 h-5 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold gradient-text">İletişim Bilgileri</h3>
+          {/* Contact Information */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="ai-card rounded-3xl p-6 neural-bg relative overflow-hidden"
+          >
+            <div className="relative z-10">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center">
+                  <Mail className="w-5 h-5 text-white" />
                 </div>
-                
-                <div className="space-y-4">
-                  <div className="p-4 rounded-xl bg-codeweek-muted/20 border border-codeweek-purple-500/20">
-                    <div className="flex items-center gap-3 mb-2">
-                      <Mail className="w-4 h-4 text-codeweek-purple-400" />
-                      <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400">
-                        E-posta
-                      </p>
-                    </div>
-                    <p className="block text-sm text-codeweek-purple-300">
-                      {siteConfig.contact.email}
+                <h3 className="text-xl font-bold gradient-text">İletişim Bilgileri</h3>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="p-4 rounded-xl bg-codeweek-muted/20 border border-codeweek-purple-500/20">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Mail className="w-4 h-4 text-codeweek-purple-400" />
+                    <p className="text-xs font-semibold uppercase tracking-widest text-codeweek-purple-400">
+                      E-posta
                     </p>
                   </div>
+                  <p className="block text-sm text-codeweek-purple-300">
+                    {siteConfig.contact.email}
+                  </p>
                 </div>
               </div>
-              
-              {/* Background Effects */}
-              <div className="absolute inset-0 opacity-10">
-                <div className="absolute inset-0 bg-gradient-to-br from-codeweek-purple-500/20 to-codeweek-pink-500/20"></div>
-                <div className="absolute top-0 left-0 w-full h-full bg-grid-light"></div>
-              </div>
-            </motion.div>
+            </div>
             
-            {/* FAQ Section */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="ai-card rounded-3xl p-6 neural-bg relative overflow-hidden"
-            >
-              <div className="relative z-10">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center">
-                    <MessageCircle className="w-5 h-5 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold gradient-text">Sıkça Sorulan Sorular</h3>
-                </div>
-                
-                <FAQAccordion items={faqs} />
-              </div>
-              
-              {/* Background Effects */}
-              <div className="absolute inset-0 opacity-10">
-                <div className="absolute inset-0 bg-gradient-to-br from-codeweek-purple-500/20 to-codeweek-pink-500/20"></div>
-                <div className="absolute top-0 left-0 w-full h-full bg-grid-light"></div>
-              </div>
-            </motion.div>
-          </div>
+            {/* Background Effects */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute inset-0 bg-gradient-to-br from-codeweek-purple-500/20 to-codeweek-pink-500/20"></div>
+              <div className="absolute top-0 left-0 w-full h-full bg-grid-light"></div>
+            </div>
+          </motion.div>
         </div>
       </section>
     </div>

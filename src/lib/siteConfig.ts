@@ -5,7 +5,7 @@ export const siteConfig = {
   url: "https://kodlamahaftasi-ai.example.com",
   ogImage: "/og-ai.png",
   contact: {
-    email: "Bilgisayar@eyuboglu.k12.tr",
+    email: "bilgisayar@eyuboglu.k12.tr",
     phone: "+90 212 555 00 00",
   },
   socials: [

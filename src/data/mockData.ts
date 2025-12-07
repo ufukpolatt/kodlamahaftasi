@@ -471,23 +471,3 @@ export const galleryItems = Array.from({ length: 8 }).map((_, idx) => ({
   type: idx % 3 === 0 ? "AI Demo" : "AI Workshop",
 }));
 
-export const faqs = [
-  {
-    question: "AI etkinliklerine kimler katılabilir?",
-    answer:
-      "Öğrenciler, araştırmacılar, geliştiriciler, AI meraklıları ve teknoloji profesyonelleri katılabilir. Temel programlama bilgisi bazı atölyeler için gereklidir.",
-  },
-  {
-    question: "Online AI katılımı var mı?",
-    answer:
-      "Evet, tüm ana sahne konuşmaları ve birçok atölye KodlamaHaftası AI platformu üzerinden canlı yayınlanır. Online katılımcılar interaktif Q&A session'lara katılabilirler.",
-  },
-  {
-    question: "AI Hackathon'a nasıl başvurabilirim?",
-    answer: "AI Hackathon başvuruları etkinlik öncesi açılır. Takım halinde veya bireysel başvuru yapabilirsiniz. AI ethics prensiplerine uygun projeler önceliklidir.",
-  },
-  {
-    question: "AI sertifika programı var mı?",
-    answer: "Evet, tüm AI atölyelerine katılanlara dijital AI katılım sertifikası verilir. AI ethics ve responsible AI modüllerini tamamlayanlara özel sertifika sunulur.",
-  },
-];

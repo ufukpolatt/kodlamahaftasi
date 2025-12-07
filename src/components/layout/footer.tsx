@@ -82,15 +82,6 @@ export function Footer() {
                 <Mail className="w-4 h-4" />
                 {siteConfig.contact.email}
               </a>
-              <a
-                href={`tel:${siteConfig.contact.phone}`}
-                className="flex items-center gap-3 text-sm text-codeweek-purple-300 hover:text-white transition-colors"
-              >
-                <div className="w-4 h-4 rounded-full bg-gradient-to-br from-codeweek-purple-500 to-codeweek-pink-500 flex items-center justify-center">
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
-                </div>
-                {siteConfig.contact.phone}
-              </a>
             </div>
           </motion.div>
 
