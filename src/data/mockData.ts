@@ -49,7 +49,7 @@ export const scheduleDays = [
     date: "10 Aralık",
     events: [
       { title: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları", time: "10:45-11:25", track: "Online Konuk Konuşması", speaker: "Konuşmacı: Muratcan Karagöz - SUN TEKSTİL ARGE Uzmanı", participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar\nBurçak Eyüboğlu Ortaokulu 6. Sınıflar\nKemerburgaz Ortaokulu 5.6. ve 7.Sınıflar" },
-      { title: "Teknolojiyle İlham Veren Projeler - Öğrenci Proje Paylaşımı", time: "12:10-12:45", track: "Çamlıca Kampüsü - E-Hall", speaker: "Lise Hazırlık - 9.Sınıf" },
+      { title: "Teknolojiyle İlham Veren Projeler - Öğrenci Proje Paylaşımı", time: "12:10-12:45", track: "Çamlıca Kampüsü - E-Hall", speaker: "8. Sınıf" },
       { title: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi", time: "12:50-13:30", track: "Çamlıca Kampüsü - E-Hall", speaker: "Konuşmacı: Tümay Solak - ENERJİSA Innovation Manager", participants: " Lise Hazırlık - 9. ve 10.Sınıflar" },
       { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
       { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
@@ -60,7 +60,7 @@ export const scheduleDays = [
     day: "Perşembe",
     date: "11 Aralık",
     events: [
-      { title: "Ürün Zekâsı Platformu", time: "10:45-11:25", track: "Eyüboğlu Hall", speaker: "Konuşmacı: Seza Dursun - BOYNER Principal Data Science Product Owner", participants: "Çamlıca Ortaokulu 8.Sınıflar \n Eyüboğlu Koleji Burçak Eyüboğlu Fen veTeknoloji Lisesi 11.Sınıflar" },
+      { title: "Ürün Zekâsı Platformu", time: "10:45-11:25", track: "Eyüboğlu Hall", speaker: "Konuşmacı: Seza Dursun - BOYNER Principal Data Science Product Owner", participants: "Çamlıca Ortaokulu 8.Sınıflar \n Eyüboğlu Koleji Burçak Eyüboğlu Fen veTeknoloji Lisesi 11.Sınıflar\nKemerbugaz Ortaokulu 8.Sınıflar (Online)" },
       { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
       { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "DOĞU ATAŞEHİR EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
       { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "KEMERBURGAZ EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
@@ -112,7 +112,7 @@ export const speakerSlides = [
     talkTime: "10:45-11:25",
     talkTopic: "Ürün Zekâsı Platformu",
     location: "Eyüboğlu Hall",
-    participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar, Burçak Eyüboğlu Ortaokulu 6. Sınıflar, Kemerburgaz Ortaokulu 5.6. ve 7.Sınıflar"
+    participants: "Çamlıca Ortaokulu 8.Sınıflar, Eyüboğlu Koleji Burçak Eyüboğlu Fen veTeknoloji Lisesi 11.Sınıflar, Kemerbugaz Ortaokulu 8.Sınıflar (Online)"
   },
   {
     id: 2,

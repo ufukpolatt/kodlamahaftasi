@@ -198,8 +198,8 @@ export default function Home() {
           </p>
         </motion.div>
         
-        <div className="grid gap-8 md:grid-cols-3">
-          {scheduleDays.slice(0, 3).map((day, index) => (
+        <div className="space-y-8">
+          {scheduleDays.map((day, index) => (
             <motion.div
               key={day.day}
               initial={{ opacity: 0, y: 30 }}
@@ -221,14 +221,15 @@ export default function Home() {
                   <Cpu className="w-6 h-6 text-white" />
                 </div>
               </div>
-              <div className="space-y-4">
-                {day.events.slice(0, 3).map((event) => (
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {day.events.map((event, index) => (
                   <EventCard
-                    key={event.title}
+                    key={`${event.title}-${event.time}-${index}`}
                     title={event.title}
                     time={event.time}
                     track={event.track}
                     speaker={event.speaker}
+                    participants={event.participants}
                   />
                 ))}
               </div>
