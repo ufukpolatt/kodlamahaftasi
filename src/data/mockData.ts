@@ -106,7 +106,7 @@ export const speakerSlides = [
   {
     id: 5,
     speakerName: "Seza Dursun",
-    speakerImage: "/seza_dursun.jpeg",
+    speakerImage: "/seza_dursunn.jpeg",
     speakerRole: "BOYNER- Principal Data Science Product Owner",
     talkDate: "11 Aralık 2024",
     talkTime: "10:45-11:25",
@@ -405,7 +405,7 @@ export const speakers = [
     role: "BOYNER- Principal Data Science Product Owner",
     topic: "Ürün Zekâsı Platformu ",
     bio: "Seza Dursun, yapay zekâ ve veri bilimi alanında uzman bir isimdir. Boyner'de Data Science Product Owner olarak görev yapmakta ve aynı zamanda Yeditepe Üniversitesi'nde yapay zekâ ve veri bilimi dersleri vermektedir. MIT xPRO'da Data Science & Big Data Analytics eğitimini tamamlayan Dursun, büyük veri, makine öğrenimi ve yapay zekâ projelerinde aktif rol almaktadır.",
-    image: "/seza_dursun.jpeg",
+    image: "/seza_dursunn.jpeg",
     experience: "",
     achievements: "",
     session: "Ürün Zekâsı Platformu",
@@ -448,6 +448,18 @@ export const speakers = [
     session: "Otonom Sualtı Aracı",
     sessionTime: "Burçak Eyüboğlu Kampüsü 12 Aralık 09:55-10:35, Burçak Eyüboğlu Kampüsü 12 Aralık 10:45-11:25, Çamlıca Eyüboğlu Kampüsü 12 Aralık 12:50-13:30, Çamlıca Eyüboğlu Kampüsü 12 Aralık 13:40-14:20, Çamlıca Eyüboğlu Kampüsü 12 Aralık 14:30-15:10",
     sessionLocation: "Burçak Eyüboğlu Kampüsü - Oditoryum, Çamlıca Eyüboğlu Kampüsü - E-Hall"
+  },
+  {
+    name: "Teknolojiyle İlham Veren Projeler",
+    role: "Defne SEZGİN, Melisa SEZGİN, Aras KUTLUĞ, Devrim Ali GÜNDÜZ, Kerem ERDİR, Burak Can ÜÇKURT, Oğuz Kaan ÖZKIRAN, Can ÖZFIRAT, Deniz BAYSA, Ali Kaan GÜMRÜKÇÜ",
+    topic: "Teknolojiye Yön Veren Projeler",
+    bio: "Teknolojiye yön veren projeler - öğrenci paylaşımı",
+    image: "",
+    experience: "Toplam 50+ yıl teknoloji deneyimi, 10+ farklı teknoloji alanında uzmanlık",
+    achievements: "Çok sayıda inovasyon ödülü, başarılı teknoloji startup'ları, uluslararası konferans konuşmacılıkları",
+    session: "Teknolojiye Yön Veren Projeler",
+    sessionTime: "",
+    sessionLocation: ""
   }
 ];
 

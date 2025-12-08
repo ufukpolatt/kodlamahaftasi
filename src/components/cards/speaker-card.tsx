@@ -64,7 +64,7 @@ export function SpeakerCard({
                   className="w-full h-full rounded-full object-cover"
                 />
               ) : (
-                <div className="w-full h-full rounded-full bg-codeweek-dark flex items-center justify-center">
+                <div className="w-full h-full rounded-full bg-gradient-to-br from-codeweek-purple-500/20 to-codeweek-pink-500/20 backdrop-blur-sm border border-codeweek-purple-500/30 flex items-center justify-center">
                   <UserRound className="w-10 h-10 text-codeweek-purple-300" />
                 </div>
               )}

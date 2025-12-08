@@ -28,7 +28,7 @@ export default function MentorsPage() {
           
           <p className="text-xl text-codeweek-purple-200 max-w-3xl mx-auto leading-relaxed">
             Kodlama Haftası boyunca anaokulu atölyelerinde, lise düzeyindeki 11.Sınıf DP Öğrencileri 
-            ile FRC Kulübünden öğrencilerimiz gönüllü olarak görev alacak ve anaokulu 5 yaştaki öğrencilerimize rehberlik edeceklerdir.
+            ile FRC Kulübünden öğrencilerimiz gönüllü olarak görev alacak ve anaokulu 4 ve 5 yaştaki öğrencilerimize rehberlik edeceklerdir.
           </p>
         </motion.div>
       </section>
@@ -98,9 +98,9 @@ export default function MentorsPage() {
                 </span>
               </div>
               <p className="text-lg text-white leading-relaxed text-center font-medium">
-                Bu atölyeler sayesinde öğrencilerimizin bilgi ve becerilerini anaokulu öğrencilerimizle paylaşırken
-                aynı zamanda organizasyon, liderlik, sorumluluk alma, toplumsal bilinç geliştirme ve iş birliği içinde
-                çalışma gibi alanlarda da kendilerini geliştireceklerine inanıyor, kendilerine çok teşekkür ediyoruz.
+                Bu atölyeler sayesinde öğrencilerimizin bilgi ve becerilerini anaokulu öğrencilerimizle paylaşırken; aynı zamanda
+                organizasyon, liderlik, sorumluluk alma, toplumsal bilinç geliştirme ve iş birliği içinde çalışma gibi alanlarda da
+                kendilerini geliştireceklerine inanıyor ve hepsine teşekkür ediyoruz.
               </p>
             </div>
           </div>
