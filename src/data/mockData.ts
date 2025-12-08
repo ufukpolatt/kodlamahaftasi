@@ -34,37 +34,36 @@ export const scheduleDays = [
     events: [
       { title: "İTÜ ATA Takımı - İnsansız Hava Aracı", time: "13:40-14:20", track: "Kemerburgaz Kampüsü - Konferans Salonu", speaker: "Kemerburgaz İlkokulu 3. ve 4. Sınıflar" },
       { title: "İTÜ ATA Takımı - İnsansız Hava Aracı", time: "14:30-15:10", track: "Kemerburgaz Kampüsü - Konferans Salonu", speaker: "Kemerburgaz Ortaokulu 5.-6.-7. ve 8. Sınıflar" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
+      { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
     ],
   },
   {
     day: "Salı",
     date: "9 Aralık",
     events: [
-      { title: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları", time: "10:45-11:25", track: "Online Konuk Konuşması", speaker: "Konuşmacı: Muratcan Karagöz - SUN TEKSTİL ARGE Uzmanı", participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar\nBurçak Eyüboğlu Ortaokulu 6. Sınıflar\nKemerburgaz Ortaokulu 5.6. ve 7.Sınıflar" },
-      { title: "MIT xPRO'da Data Science & Big Data Analytics", time: "10:45-11:25", track: "Eyüboğlu Hall", speaker: "Konuşmacı: Seza Dursun - BOYNER Principal Data Science Product Owner", participants: "Çamlıca Ortaokulu 8.Sınıflar \n Eyüboğlu Koleji Burçak Eyüboğlu Fen veTeknoloji Lisesi 11.Sınıflar" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "DOĞU ATAŞEHİR EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
+      { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "DOĞU ATAŞEHİR EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
     ],
   },
   {
     day: "Çarşamba",
     date: "10 Aralık",
     events: [
+      { title: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları", time: "10:45-11:25", track: "Online Konuk Konuşması", speaker: "Konuşmacı: Muratcan Karagöz - SUN TEKSTİL ARGE Uzmanı", participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar\nBurçak Eyüboğlu Ortaokulu 6. Sınıflar\nKemerburgaz Ortaokulu 5.6. ve 7.Sınıflar" },
       { title: "Teknolojiyle İlham Veren Projeler - Öğrenci Proje Paylaşımı", time: "12:10-12:45", track: "Çamlıca Kampüsü - E-Hall", speaker: "Lise Hazırlık - 9.Sınıf" },
       { title: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi", time: "12:50-13:30", track: "Çamlıca Kampüsü - E-Hall", speaker: "Konuşmacı: Tümay Solak - ENERJİSA Innovation Manager", participants: " Lise Hazırlık - 9. ve 10.Sınıflar" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "KEMERBURGAZ EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
+      { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
+      { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
+      { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "KEMERBURGAZ EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
     ],
   },
   {
     day: "Perşembe",
     date: "11 Aralık",
     events: [
-      { title: "Teknolojiyle İlham Veren Projeler - Öğrenci Proje Paylaşımı", time: "10:45-11:25", track: "Çamlıca Kampüsü - E-Hall", speaker: "6.ve 7.Sınıflar" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "DOĞU ATAŞEHİR EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
-      { title: "4. Sınıf Yüz Yüze Veli Etkinliği", time: "16:15-17:15", track: "KEMERBURGAZ EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
+      { title: "Ürün Zekâsı Platformu", time: "10:45-11:25", track: "Eyüboğlu Hall", speaker: "Konuşmacı: Seza Dursun - BOYNER Principal Data Science Product Owner", participants: "Çamlıca Ortaokulu 8.Sınıflar \n Eyüboğlu Koleji Burçak Eyüboğlu Fen veTeknoloji Lisesi 11.Sınıflar" },
+      { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
+      { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "DOĞU ATAŞEHİR EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
+      { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "KEMERBURGAZ EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
     ],
   },
   {
@@ -98,7 +97,7 @@ export const speakerSlides = [
     speakerName: "Muratcan Karagöz",
     speakerImage: "/muratcan_karagoz.jpg",
     speakerRole: "SUN TEKSTİL- ARGE Uzmanı",
-    talkDate: "9 Aralık 2024",
+    talkDate: "10 Aralık 2024",
     talkTime: "10:45-11:25",
     talkTopic: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları",
     location: "Online Konuk Konuşması",
@@ -109,9 +108,9 @@ export const speakerSlides = [
     speakerName: "Seza Dursun",
     speakerImage: "/seza_dursun.jpeg",
     speakerRole: "BOYNER- Principal Data Science Product Owner",
-    talkDate: "9 Aralık 2024",
+    talkDate: "11 Aralık 2024",
     talkTime: "10:45-11:25",
-    talkTopic: "MIT xPRO'da Data Science & Big Data Analytics",
+    talkTopic: "Ürün Zekâsı Platformu",
     location: "Eyüboğlu Hall",
     participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar, Burçak Eyüboğlu Ortaokulu 6. Sınıflar, Kemerburgaz Ortaokulu 5.6. ve 7.Sınıflar"
   },
@@ -402,29 +401,28 @@ export const speakers = [
     sessionLocation: "Çamlıca Kampüsü - E-Hall"
   },
   {
+    name: "Seza Dursun",
+    role: "BOYNER- Principal Data Science Product Owner",
+    topic: "Ürün Zekâsı Platformu ",
+    bio: "Seza Dursun, yapay zekâ ve veri bilimi alanında uzman bir isimdir. Boyner'de Data Science Product Owner olarak görev yapmakta ve aynı zamanda Yeditepe Üniversitesi'nde yapay zekâ ve veri bilimi dersleri vermektedir. MIT xPRO'da Data Science & Big Data Analytics eğitimini tamamlayan Dursun, büyük veri, makine öğrenimi ve yapay zekâ projelerinde aktif rol almaktadır.",
+    image: "/seza_dursun.jpeg",
+    experience: "",
+    achievements: "",
+    session: "Ürün Zekâsı Platformu",
+    sessionTime: "11 Aralık 10:45-11:25",
+    sessionLocation: "Eyüboğlu Hall"
+  },
+  {
     name: "Muratcan Karagöz",
     role: "SUN TEKSTİL- ARGE Uzmanı",
     topic: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları",
-    bio: "Sun Tekstil Ar-Ge Merkezi’nde inovasyon çalışmaları yürütmektedir. Yapay zekâ destekli dijital tasarım ve 3D modelleme uygulamalarıyla, fiziksel prototipe ihtiyaç duymadan hızlı ve yenilikçi moda tasarımlarının geliştirilmesine katkı sağlayan bir çözüm sürecinin iyileştirilmesine yönelik çalışmalar gerçekleştirmektedir.",
+    bio: "Sun Tekstil Ar-Ge Merkezi'nde inovasyon çalışmaları yürütmektedir. Yapay zekâ destekli dijital tasarım ve 3D modelleme uygulamalarıyla, fiziksel prototipe ihtiyaç duymadan hızlı ve yenilikçi moda tasarımlarının geliştirilmesine katkı sağlayan bir çözüm sürecinin iyileştirilmesine yönelik çalışmalar gerçekleştirmektedir.",
     image: "/muratcan_karagoz.jpg",
     experience: "",
     achievements: "",
     session: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları",
-    sessionTime: "9 Aralık 10:45-11:25",
+    sessionTime: "10 Aralık 10:45-11:25",
     sessionLocation: "Online Konuk Konuşması"
-  },
-  
-  {
-    name: "Seza Dursun",
-    role: "BOYNER- Principal Data Science Product Owner",
-    topic: "MIT xPRO’da Data Science & Big Data Analytics ",
-    bio: "Seza Dursun, yapay zekâ ve veri bilimi alanında uzman bir isimdir. Boyner’de Data Science Product Owner olarak görev yapmakta ve aynı zamanda Yeditepe Üniversitesi’nde yapay zekâ ve veri bilimi dersleri vermektedir. MIT xPRO’da Data Science & Big Data Analytics eğitimini tamamlayan Dursun, büyük veri, makine öğrenimi ve yapay zekâ projelerinde aktif rol almaktadır.",
-    image: "/seza_dursun.jpeg",
-    experience: "",
-    achievements: "",
-    session: "MIT xPRO'da Data Science & Big Data Analytics",
-    sessionTime: "9 Aralık 10:45-11:25",
-    sessionLocation: "Eyüboğlu Hall"
   },
   {
     name: "İTÜ ATA Takımı",

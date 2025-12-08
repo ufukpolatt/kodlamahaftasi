@@ -99,7 +99,7 @@ export default function CompetitionsPage() {
           </h1>
           
           <p className="text-xl text-codeweek-purple-200 max-w-3xl mx-auto leading-relaxed">
-            Yarışmalara & maratonlara katılarak yaratıcılığınızı ortaya koyun, eğlenceli görevlerle problem çözme becerilerinizi geliştirin.
+            Kodlama Haftası boyunca öğrencilerimizin katılacağı yarışmalar, maratonlar ve hackathonlara ilişkin tüm bilgilere bu sayfadan ulaşabilirsiniz.
           </p>
         </motion.div>
       </section>

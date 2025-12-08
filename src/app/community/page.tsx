@@ -18,7 +18,7 @@ export default function CommunityPage() {
           <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-codeweek-purple-500/20 to-codeweek-pink-500/20 border border-codeweek-purple-500/30 px-6 py-3">
             <Heart className="w-5 h-5 text-codeweek-purple-400" />
             <span className="text-sm font-bold uppercase tracking-widest text-codeweek-purple-300">
-              Veli Katılımı
+              Aile Katılımı
             </span>
           </div>
           
@@ -63,13 +63,11 @@ export default function CommunityPage() {
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center">
                   <Users className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold gradient-text">4. Sınıflar İçin Yüz Yüze Aile Etkinliği</h3>
+                <h3 className="text-2xl font-bold gradient-text">Veli–Öğrenci Kodlama Etkinliği</h3>
               </div>
               
               <p className="text-base text-codeweek-purple-200 leading-relaxed mb-6">
-                Eyüboğlu Okulları olarak Aralık ayında tüm kampüslerimizde eğlenceli ve öğretici kodlama etkinlikleri düzenliyoruz! <br /> <br />
-                8–12 Aralık tarihleri arasında Burçak Eyüboğlu, Çamlıca Eyüboğlu, Kemerburgaz Eyüboğlu ve Doğu Ataşehir Eyüboğlu kampüslerimizde gerçekleşecek bu özel aile - öğrenci atölye buluşmalarımızda; velilerimiz ve öğrencilerimiz birlikte kodlamanın keyfini yaşayacak, algoritma mantığını oyunlarla keşfedecek ve yapay zekâyı basit deneyimler ile tanıyacaklardır. <br /> <br />
-                Hep birlikte öğrenmeyi güçlendireceğimiz bu etkinliklerde, hem eğlenecek hem de geleceğin teknolojilerine adım atacağız. Sizi de bu keyifli yolculuğa davet ediyoruz! <br /> <br />
+                4.sınıf öğrencilerimizin velileriyle birlikte katıldığı bu yüz yüze atölyede, aileler çocuklarıyla birlikte kodlama ve problem çözme sürecini deneyimler. Velilerimiz, öğrencilerimizin teknolojiyle nasıl öğrendiğini yakından görürken; öğrencilerimiz de aileleriyle birlikte üretmenin keyfini yaşar.
               </p>
               
               <div className="space-y-3 mb-6">
@@ -87,23 +85,6 @@ export default function CommunityPage() {
                 </div>
               </div>
               
-              <div className="mb-6">
-                <h4 className="text-lg font-bold text-white mb-3">Etkinliklerimiz:</h4>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full"></div>
-                    <span className="text-sm text-codeweek-purple-200">Hanoi Kuleleri – Algoritma ve Problem Çözme</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full"></div>
-                    <span className="text-sm text-codeweek-purple-200">Teachable Machine – Makine Öğrenmesi Deneyi</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full"></div>
-                    <span className="text-sm text-codeweek-purple-200">Code.org Dans Partisi – Blok Kodlama Eğlencesi</span>
-                  </div>
-                </div>
-              </div>
               
              
             </div>
@@ -128,21 +109,11 @@ export default function CommunityPage() {
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-codeweek-purple-600 to-codeweek-pink-600 flex items-center justify-center">
                   <BookOpen className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold gradient-text">Asenkron Aile Etkinliği</h3>
+                <h3 className="text-2xl font-bold gradient-text">Evde Aile ile Kodlama Etkinlikleri</h3>
               </div>
               
               <p className="text-base text-codeweek-purple-200 leading-relaxed mb-6">
-                Kodlama Haftası'na Hoş Geldiniz!<br /><br />
-                
-                Ailelerin çocuklarıyla birlikte hem eğlenip hem öğrenebileceği özel bir içerik hazırladık. Hafta boyunca teknolojiyi keşfetmeyi keyifli ve ulaşılabilir kılan çeşitli etkinliklerle sizleri buluşturuyoruz.<br /><br />
-                
-                Her gün, çocukların dijital dünyayı daha iyi anlamasına yardımcı olacak bir etkinlik önerisi sunuyoruz. Bu etkinlikler; problem çözme, yaratıcılık, mantıksal düşünme ve iş birliği gibi becerileri desteklerken ailelerin sürece aktif katılımını teşvik eder.<br /><br />
-                
-                Çocuklarınızla kod yazarken, dijital araçları keşfederken veya mini projeler oluştururken hem yeni deneyimler kazanacak hem de birlikte kaliteli zaman geçireceksiniz.<br /><br />
-                
-                Tüm etkinlikler Classroom üzerinden paylaşılmıştır. Dilediğiniz zaman erişebilir, evinizde kolayca uygulayabilirsiniz.<br /><br />
-                
-                Hazırsanız, teknoloji ve yaratıcılıkla dolu bu özel haftaya başlayalım!
+                Kodlama Haftası boyunca, anaokulundan 4. sınıfa kadar tüm öğrencilerimiz için evde aileleriyle birlikte yapılabilecek günlük kodlama etkinlikleri hazırladık. Bu öneriler, ailelerin çocuklarıyla birlikte eğlenceli, basit ve öğretici çalışmalar yapmalarını desteklemek amacıyla tasarlanmıştır. Etkinlik dosyalarına Google Classroom sınıfları üzerinden ulaşabilirsiniz.
               </p>
               
               <div className="space-y-4 mb-6">
@@ -548,69 +519,69 @@ export default function CommunityPage() {
           className="space-y-12"
         >
           <div className="text-center">
-            <h2 className="text-3xl font-bold gradient-text mb-4">4. Sınıf Yüz Yüze Veli Etkinliği Takvimi</h2>
+            <h2 className="text-3xl font-bold gradient-text mb-4">Veli–Öğrenci Kodlama Etkinliği Takvimi</h2>
             <p className="text-lg text-codeweek-purple-200 max-w-2xl mx-auto">
-              Hafta boyunca devam edecek veli katılım etkinlikleri
+              Hafta boyunca devam edecek aile katılım etkinlikleri
             </p>
           </div>
           
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                day: "ÇAMLICA EYÜBOĞLU",
-                title: "Salı",
-                date: "10.12.2025",
-                time: "16:15 - 17:15",
-                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
-              },
-              {
-                day: "ÇAMLICA EYÜBOĞLU",
-                title: "Çarşamba",
-                date: "11.12.2025",
-                time: "16:15 - 17:15",
-                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
-              },
-              {
                 day: "BURÇAK EYÜBOĞLU",
-                title: "Pazar",
-                date: "08.12.2025",
-                time: "16:15 - 17:15",
-                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
-              },
-              {
-                day: "BURÇAK EYÜBOĞLU",
-                title: "Salı",
-                date: "10.12.2025",
-                time: "16:15 - 17:15",
-                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
-              },
-              {
-                day: "KEMERBURGAZ EYÜBOĞLU",
-                title: "Salı",
-                date: "10.12.2025",
-                time: "16:15 - 17:15",
-                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
-              },
-              {
-                day: "KEMERBURGAZ EYÜBOĞLU",
-                title: "Çarşamba",
-                date: "11.12.2025",
-                time: "16:15 - 17:15",
-                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
-              },
-              {
-                day: "DOĞU ATAŞEHİR EYÜBOĞLU",
                 title: "Pazartesi",
                 date: "09.12.2025",
                 time: "16:15 - 17:15",
-                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
+                description: []
               },
               {
                 day: "DOĞU ATAŞEHİR EYÜBOĞLU",
+                title: "Salı",
+                date: "10.12.2025",
+                time: "16:15 - 17:15",
+                description: []
+              },
+              {
+                day: "KEMERBURGAZ EYÜBOĞLU",
                 title: "Çarşamba",
                 date: "11.12.2025",
                 time: "16:15 - 17:15",
-                description: ["Hanoi Kuleleri – Algoritma ve Problem Çözme", "Teachable Machine – Makine Öğrenmesi Deneyi", "Code.org Dans Partisi – Blok Kodlama Eğlencesi"]
+                description: []
+              },
+              {
+                day: "ÇAMLICA EYÜBOĞLU",
+                title: "Çarşamba",
+                date: "11.12.2025",
+                time: "16:15 - 17:15",
+                description: []
+              },
+              {
+                day: "BURÇAK EYÜBOĞLU",
+                title: "Çarşamba",
+                date: "11.12.2025",
+                time: "16:15 - 17:15",
+                description: []
+              },
+              {
+                day: "KEMERBURGAZ EYÜBOĞLU",
+                title: "Perşembe",
+                date: "12.12.2025",
+                time: "16:15 - 17:15",
+                description: []
+              },
+              {
+                day: "ÇAMLICA EYÜBOĞLU",
+                title: "Perşembe",
+                date: "12.12.2025",
+                time: "16:15 - 17:15",
+                description: []
+              },
+              {
+                day: "DOĞU ATAŞEHİR EYÜBOĞLU",
+                title: "Perşembe",
+                date: "12.12.2025",
+                time: "16:15 - 17:15",
+                description: []
               }
             ].map((event, index) => (
               <motion.div
@@ -643,14 +614,6 @@ export default function CommunityPage() {
                     {event.date}
                   </p>
                   
-                  <div className="space-y-2">
-                    {event.description.map((activity, idx) => (
-                      <p key={idx} className="text-sm text-codeweek-purple-200 leading-relaxed flex items-start gap-2">
-                        <span className="w-2 h-2 bg-gradient-to-r from-codeweek-purple-500 to-codeweek-pink-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        {activity}
-                      </p>
-                    ))}
-                  </div>
                 </div>
                 
                 {/* Hover Effect */}

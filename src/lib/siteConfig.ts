@@ -19,7 +19,7 @@ export const siteConfig = {
     { label: "Atölyeler", href: "/workshops" },
     { label: "Konuşmacılar", href: "/speakers" },
     { label: "Yarışmalar&Maratonlar", href: "/competitions" },
-    { label: "Veli Katılımı", href: "/community" },
+    { label: "Aile Katılımı", href: "/community" },
     { label: "İletişim", href: "/contact" },
   ],
 };
