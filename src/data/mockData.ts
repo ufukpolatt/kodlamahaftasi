@@ -90,7 +90,7 @@ export const speakerSlides = [
     talkTime: "12:50-13:30",
     talkTopic: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi",
     location: "Çamlıca Kampüsü - E-Hall",
-    participants: "Lise Hazırlık - 9.Sınıf"
+    participants: "Lise Hazırlık - 9. ve 10.Sınıflar"
   },
   {
     id: 4,
