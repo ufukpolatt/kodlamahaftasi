@@ -49,7 +49,7 @@ export const scheduleDays = [
     date: "10 Aralık",
     events: [
       { title: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları", time: "10:45-11:25", track: "Online Konuk Konuşması", speaker: "Konuşmacı: Muratcan Karagöz - SUN TEKSTİL ARGE Uzmanı", participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar\nBurçak Eyüboğlu Ortaokulu 6. Sınıflar\nKemerburgaz Ortaokulu 5.6. ve 7.Sınıflar" },
-      { title: "Teknolojiyle İlham Veren Projeler - Öğrenci Proje Paylaşımı", time: "12:10-12:45", track: "Çamlıca Kampüsü - E-Hall", speaker: "8. Sınıf" },
+      { title: "Teknolojiyle İlham Veren Projeler - Öğrenci Proje Paylaşımı", time: "12:10-12:45", track: "Çamlıca Kampüsü - E-Hall", speaker: " ", participants: "Çamlıca Ortaokulu 8. Sınıflar\nBurçak Eyüboğlu Ortaokulu 8. Sınıflar\n Kemerburgaz Ortaokulu 8.Sınıflar (Online)"},
       { title: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi", time: "12:50-13:30", track: "Çamlıca Kampüsü - E-Hall", speaker: "Konuşmacı: Tümay Solak - ENERJİSA Innovation Manager", participants: " Lise Hazırlık - 9. ve 10.Sınıflar" },
       { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
       { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
@@ -60,7 +60,7 @@ export const scheduleDays = [
     day: "Perşembe",
     date: "11 Aralık",
     events: [
-      { title: "Ürün Zekâsı Platformu", time: "10:45-11:25", track: "Eyüboğlu Hall", speaker: "Konuşmacı: Seza Dursun - BOYNER Principal Data Science Product Owner", participants: "Çamlıca Ortaokulu 8.Sınıflar \n Eyüboğlu Koleji Burçak Eyüboğlu Fen veTeknoloji Lisesi 11.Sınıflar\nKemerbugaz Ortaokulu 8.Sınıflar (Online)" },
+      { title: "Perakendede AI Kullanımına Gerçek Örnekler", time: "10:45-11:25", track: "Eyüboğlu Hall", speaker: "Konuşmacı: Seza Dursun - BOYNER Principal Data Science Product Owner", participants: "Çamlıca Ortaokulu 8.Sınıflar \n Eyüboğlu Koleji Burçak Eyüboğlu Fen veTeknoloji Lisesi 11.Sınıflar\nKemerbugaz Ortaokulu 8.Sınıflar (Online)" },
       { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
       { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "DOĞU ATAŞEHİR EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
       { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "KEMERBURGAZ EYÜBOĞLU", speaker: "4.Sınıf Öğrencileri ve Veliler" },
@@ -106,11 +106,11 @@ export const speakerSlides = [
   {
     id: 5,
     speakerName: "Seza Dursun",
-    speakerImage: "/seza_dursunn.jpeg",
+    speakerImage: "/sezzadursun.png",
     speakerRole: "BOYNER- Principal Data Science Product Owner",
     talkDate: "11 Aralık 2024",
     talkTime: "10:45-11:25",
-    talkTopic: "Ürün Zekâsı Platformu",
+    talkTopic: "Perakendede AI Kullanımına Gerçek Örnekler",
     location: "Eyüboğlu Hall",
     participants: "Çamlıca Ortaokulu 8.Sınıflar, Eyüboğlu Koleji Burçak Eyüboğlu Fen veTeknoloji Lisesi 11.Sınıflar, Kemerbugaz Ortaokulu 8.Sınıflar (Online)"
   },
@@ -403,12 +403,12 @@ export const speakers = [
   {
     name: "Seza Dursun",
     role: "BOYNER- Principal Data Science Product Owner",
-    topic: "Ürün Zekâsı Platformu ",
-    bio: "Seza Dursun, yapay zekâ ve veri bilimi alanında uzman bir isimdir. Boyner'de Data Science Product Owner olarak görev yapmakta ve aynı zamanda Yeditepe Üniversitesi'nde yapay zekâ ve veri bilimi dersleri vermektedir. MIT xPRO'da Data Science & Big Data Analytics eğitimini tamamlayan Dursun, büyük veri, makine öğrenimi ve yapay zekâ projelerinde aktif rol almaktadır.",
-    image: "/seza_dursunn.jpeg",
+    topic: "Perakendede AI Kullanımına Gerçek Örnekler",
+    bio: "Boyner'de Data Science Product Owner olarak yapay zekâ stratejilerini, projelerini ve kurumsal dönüşüm süreçlerini yönetmektedir. Generative AI alanında uzman olan Seza, aynı zamanda Yeditepe Üniversitesi’nde AI ve Veri Bilimi dersleri vermektedir. 2024’te geliştirdiği AI projeleriyle ödül almış olup, ISO/IEC 42001 yapay zekâ yönetim sistemi sertifikasyonuna sahiptir.",
+    image: "/sezzadursun.png",
     experience: "",
     achievements: "",
-    session: "Ürün Zekâsı Platformu",
+    session: "Perakendede AI Kullanımına Gerçek Örnekler",
     sessionTime: "11 Aralık 10:45-11:25",
     sessionLocation: "Eyüboğlu Hall"
   },
