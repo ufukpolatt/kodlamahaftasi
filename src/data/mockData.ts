@@ -49,7 +49,7 @@ export const scheduleDays = [
     date: "10 Aralık",
     events: [
       { title: "Tekstilde ve Moda Tasarımda Yapay Zeka Uygulamaları", time: "10:45-11:25", track: "Online Konuk Konuşması", speaker: "Konuşmacı: Muratcan Karagöz - SUN TEKSTİL ARGE Uzmanı", participants: "Çamlıca Ortaokulu 6. ve 7. Sınıflar\nBurçak Eyüboğlu Ortaokulu 6. Sınıflar\nKemerburgaz Ortaokulu 5.6. ve 7.Sınıflar" },
-      { title: "Teknolojiyle İlham Veren Projeler - Öğrenci Proje Paylaşımı", time: "12:10-12:45", track: "Çamlıca Kampüsü - E-Hall", speaker: " ", participants: "Çamlıca Ortaokulu 8. Sınıflar\nBurçak Eyüboğlu Ortaokulu 8. Sınıflar\n Kemerburgaz Ortaokulu 8.Sınıflar (Online)"},
+      { title: "Teknolojiyle İlham Veren Projeler - Öğrenci Proje Paylaşımı", time: "12:10-12:45", track: "Çamlıca Kampüsü - E-Hall", speaker: " ", participants: "Çamlıca Ortaokulu 8. Sınıflar\nBurçak Eyüboğlu Ortaokulu 8. Sınıflar"},
       { title: "Geleceğin Girişimlerini Yapay Zekâ Nasıl Seçiyor? – Selekt AI'ın Hikâyesi", time: "12:50-13:30", track: "Çamlıca Kampüsü - E-Hall", speaker: "Konuşmacı: Tümay Solak - ENERJİSA Innovation Manager", participants: " Lise Hazırlık - 9. ve 10.Sınıflar" },
       { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "ÇAMLICA EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
       { title: "4. Sınıf Yüz Yüze Aile Etkinliği", time: "16:15-17:15", track: "BURÇAK EYÜBOĞLU", speaker: " 4.Sınıf Öğrencileri ve Veliler " },
